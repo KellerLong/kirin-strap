@@ -1,0 +1,35 @@
+{
+  "name": "x-render",
+  "version": "1.0.0",
+  "description": "react client and ssr fast tools",
+  "main": "index.js",
+  "scripts": {
+    "build-client:dev": "x-render build-client --dev",
+    "build-client:debug": "x-render build-client --debug",
+    "build-client:pord": "x-render build-client --pord",
+    "build-server:dev": "x-render build-client --dev",
+    "build-server:debug": "x-render build-client --debug",
+    "build-server:pord": "x-render build-client --pord"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KellerLong/x-view.git"
+  },
+  "keywords": [
+    "react",
+    "ssr",
+    "rast"
+  ],
+  "bin": {
+    "x-render": "./bin/x-render.js"
+  },
+  "author": "kellerlong <kellerlong@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KellerLong/x-view/issues"
+  },
+  "homepage": "https://github.com/KellerLong/x-view#readme",
+  "dependencies": {
+    "commander": "^2.16.0"
+  }
+}

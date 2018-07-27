@@ -1,0 +1,15 @@
+{
+  "extends": ["tslint-config-airbnb", "tslint-react"],
+  "rulesDirectory": ["src/"],
+  "rules": {
+    "no-increment-decrement": false,
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "import-name": false,
+    "variable-name": false,
+    "no-parameter-reassignment": false,
+    "no-duplicate-imports": false,
+    "no-boolean-literal-compare": false,
+    "no-this-assignment": false
+  }
+}

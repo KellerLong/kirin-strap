@@ -7,7 +7,7 @@ const webpack = require('webpack');
 const entry = {};
 
 // ./src/index.ts
-entry.app = [`./src/index.ts`];
+entry.app = [`./src/x-render/index.ts`];
 
 /****************************************************
  * config output
@@ -70,17 +70,51 @@ const plugins = [];
 const target = 'node';
 const mode = process.env.NODE_ENV;
 
-webpack({entry, mode, output, module: moduleOptions, resolve, plugins, target}, ( error, stats ) => {
-  // error
-  if( error ) throw error;
-  // config of output style
-  const outputConfig        = {};
-  outputConfig.colors       = true;
-  outputConfig.modules      = false;
-  outputConfig.chunks       = false;
-  outputConfig.chunkModules = false;
-  // output stats
-  process.stdout.write( `${stats.toString( outputConfig )}\n` );
-  // exit node
-  process.exit();
-});
+const webpackConfig = {entry, mode, output, module: moduleOptions, resolve, plugins, target};
+
+const buildList = [
+  {
+    entry: './src/x-render/index.ts',
+    output: 'index.js',
+  },
+  {
+    entry: './src/util/index.ts',
+    output: 'util.js',
+  },
+  {
+    entry: './src/network/index.ts',
+    output: 'network.js',
+  },
+  {
+    entry: './src/model/index.ts',
+    output: 'model.js',
+  },
+  {
+    entry: './src/component/index.ts',
+    output: 'component.js',
+  },
+];
+
+let buildIndex = 0;
+function build (buildOption) {
+  buildIndex++;
+  webpackConfig.entry.app = [buildOption.entry];
+  webpackConfig.output.filename = buildOption.output;
+  webpack(webpackConfig, ( error, stats ) => {
+    // error
+    if( error ) throw error;
+    // config of output style
+    const outputConfig        = {};
+    outputConfig.colors       = true;
+    outputConfig.modules      = false;
+    outputConfig.chunks       = false;
+    outputConfig.chunkModules = false;
+    // output stats
+    process.stdout.write( `${stats.toString( outputConfig )}\n` );
+    if ( buildIndex === buildList.length ) { process.exit(); }
+
+    build(buildList[buildIndex]);
+  });
+}
+
+build(buildList[buildIndex]);

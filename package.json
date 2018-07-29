@@ -4,12 +4,8 @@
   "description": "react client and ssr fast tools",
   "main": "index.js",
   "scripts": {
-    "build-client:dev": "x-render build-client --dev",
-    "build-client:debug": "x-render build-client --debug",
-    "build-client:pord": "x-render build-client --pord",
-    "build-server:dev": "x-render build-client --dev",
-    "build-server:debug": "x-render build-client --debug",
-    "build-server:pord": "x-render build-client --pord"
+    "build:debug": "cross-env NODE_ENV=development node webpack.config.js",
+    "build:pord": "cross-env NODE_ENV=development node webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +26,17 @@
   },
   "homepage": "https://github.com/KellerLong/x-view#readme",
   "dependencies": {
-    "commander": "^2.16.0"
+    "commander": "^2.16.0",
+    "dva": "^2.3.1",
+    "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.2"
   }
 }

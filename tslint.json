@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint-config-airbnb", "tslint-react"],
+  "extends": ["tslint-config-airbnb"],
   "rulesDirectory": ["src/"],
   "rules": {
     "no-increment-decrement": false,

@@ -124,6 +124,6 @@ let target = 'web';
 //   target = 'node';
 // }
 
-const mode = env.NODE_ENV;
+const mode = process.env.NODE_ENV;
 
 module.exports = {entry, mode, output, module: moduleOptions, resolve, plugins, target};

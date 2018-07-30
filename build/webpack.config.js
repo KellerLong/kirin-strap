@@ -1,14 +1,8 @@
 const path = require('path');
-const dotenv = require('dotenv');
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
 const utils = require('./utils');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-//const StyleLintPlugin   = require("stylelint-webpack-plugin");
-
-// load base config
-dotenv.config();
-const env = process.env;
 
 /****************************************************
  * config entry
@@ -119,6 +113,7 @@ moduleOptions.rules.push({
  ***************************************************/
 const plugins = [stylePrivate];
 plugins.push(new webpack.DefinePlugin(utils.getConfigDefinePlugin()));
+plugins.push(new HtmlPlugin(utils.getConfigHtmlTemplate()));
 
 /****************************************************
  * config target

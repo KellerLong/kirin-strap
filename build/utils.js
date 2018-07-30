@@ -35,19 +35,9 @@ class Util {
    * @returns {{}}
    */
   getConfigHtmlTemplate () {
-    const BUILD_TYPE      = process.env.BUILD_TYPE;
-    const option          = {}; // html
-
-    if( "client" === BUILD_TYPE  ) {
-      option.filename     = "index.html";
-      option.template     = process.env.FILE_HTML_TEMPLATE;
-    }
-
-    if( "server" === BUILD_TYPE  ) {
-      option.filename     = "index.html";
-      option.template     = process.env.FILE_HTML_TEMPLATE;
-    }
-
+    const option        = {}; // html
+    option.filename     = "index.html";
+    option.template     = "index.html";
     return option;
   }
 

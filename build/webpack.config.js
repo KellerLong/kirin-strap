@@ -56,7 +56,6 @@ moduleOptions.rules.push({
   test: /\.(ts|tsx)$/,
   exclude: /node_modules/,
   loader: 'ts-loader',
-  include: [path.resolve('src')]
 });
 
 // tslint
@@ -65,7 +64,6 @@ moduleOptions.rules.push({
   enforce: 'pre',
   exclude: /node_modules/,
   loader: 'tslint-loader',
-  include: [path.resolve('src')]
 });
 
 // css
@@ -124,6 +122,6 @@ let target = 'web';
 //   target = 'node';
 // }
 
-const mode = process.env.NODE_ENV;
+const mode = 'development'; // process.env.NODE_ENV;
 
 module.exports = {entry, mode, output, module: moduleOptions, resolve, plugins, target};

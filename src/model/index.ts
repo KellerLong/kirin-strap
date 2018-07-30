@@ -5,7 +5,7 @@ import state from './State';
 import subscription from './Subscription';
 
 export const Effect = effect;
-export const  Model = model;
-export const  Reducer = reducer;
-export const  State = state;
-export const  Subscription = subscription;
+export const Model = model;
+export const Reducer = reducer;
+export const State = state;
+export const Subscription = subscription;

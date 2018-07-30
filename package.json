@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KellerLong/x-view.git"
+    "url": "git+https://github.com/KellerLong/x-render.git"
   },
   "keywords": [
     "react",
@@ -22,9 +22,9 @@
   "author": "kellerlong <kellerlong@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KellerLong/x-view/issues"
+    "url": "https://github.com/KellerLong/x-render/issues"
   },
-  "homepage": "https://github.com/KellerLong/x-view#readme",
+  "homepage": "https://github.com/KellerLong/x-render#readme",
   "dependencies": {
     "commander": "^2.16.0",
     "dva": "^2.3.1",

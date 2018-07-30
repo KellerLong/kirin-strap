@@ -2,6 +2,8 @@
 export default class XRender {
 // 初始化
   public constructor() {
+    // 初始化配置
+
     // 初始路由
 
     // 初始化 dva

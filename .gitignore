@@ -119,7 +119,7 @@ node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
-typings/
+src/typings/
 
 # Optional npm cache directory
 .npm

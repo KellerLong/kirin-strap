@@ -4,6 +4,8 @@ const HtmlPlugin = require('html-webpack-plugin');
 const utils = require('./utils');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const YAML = require('yamljs');
+// const xOption = process.cwd();
 /****************************************************
  * config entry
  ***************************************************/
@@ -18,7 +20,7 @@ entry.app = [`./Application.ts`];
  ***************************************************/
 const output = {};
 output.publicPath = './';
-output.path = path.join(__dirname, 'dist');
+output.path = path.join(process.cwd(), 'dist');
 output.filename = `static/js/[name]-[hash:5].js`;
 
 

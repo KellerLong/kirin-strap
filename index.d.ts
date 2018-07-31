@@ -1,2 +1,4 @@
-declare const XRender: () => void;
-declare const XRenderApplication: () => void;
+declare module 'x-render' {
+  import XRender from './src/x-render/index';
+  return XRender;
+}

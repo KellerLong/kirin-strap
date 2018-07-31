@@ -107,7 +107,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 编译入口\nvar XRender 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/x-render/XRenderApplication.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Application) { return new Application(); });\n\n\n//# sourceURL=webpack:///./src/x-render/XRenderApplication.ts?");
 
 /***/ }),
 

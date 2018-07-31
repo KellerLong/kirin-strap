@@ -87,14 +87,39 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/x-render/XRender.ts":
+/*!*********************************!*\
+  !*** ./src/x-render/XRender.ts ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// 编译入口\nvar XRender = /** @class */ (function () {\n    // 初始化\n    function XRender() {\n        // 初始化配置\n        // 初始路由\n        // 初始化 dva\n    }\n    // 路由跳转前 返回 true 继续跳转\n    XRender.prototype.onRouteBefore = function () {\n        return true;\n    };\n    // 路由跳转后\n    XRender.prototype.onRouteAfter = function () {\n    };\n    // 网络请求前\n    XRender.prototype.onNetWorkRequestBefore = function (url, sendData, network) {\n        return true;\n    };\n    // 网络请求后\n    XRender.prototype.onNetWorkRequestAfter = function (url, sendData, network) {\n        return true;\n    };\n    // 网络请求中发生变更\n    XRender.prototype.onNetWorkRequestChange = function (url, sendData, network) {\n        return true;\n    };\n    // 网络请求中发生错误\n    XRender.prototype.onNetWorkRequestError = function (url, sendData, network) {\n        return true;\n    };\n    // 全局 layout 路由之外 返回一个有 children 的 组件\n    XRender.prototype.returnLayout = function () {\n    };\n    return XRender;\n}());\n/* harmony default export */ __webpack_exports__[\"default\"] = (XRender);\n\n\n//# sourceURL=webpack:///./src/x-render/XRender.ts?");
+
+/***/ }),
+
+/***/ "./src/x-render/XRenderApplication.ts":
+/*!********************************************!*\
+  !*** ./src/x-render/XRenderApplication.ts ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/x-render/XRenderApplication.ts?");
+
+/***/ }),
+
 /***/ "./src/x-render/index.ts":
 /*!*******************************!*\
   !*** ./src/x-render/index.ts ***!
   \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default, XRenderApplication */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31mA file specified in tsconfig.json could not be found: /Users/kellerlong/project/x-view/index.d.ts\\u001b[39m\\n    at Object.loader (/Users/kellerlong/project/x-view/node_modules/ts-loader/dist/index.js:18:18)\");\n\n//# sourceURL=webpack:///./src/x-render/index.ts?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"XRenderApplication\", function() { return XRenderApplication; });\n/* harmony import */ var _XRenderApplication__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./XRenderApplication */ \"./src/x-render/XRenderApplication.ts\");\n/* harmony import */ var _XRender__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./XRender */ \"./src/x-render/XRender.ts\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_XRender__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar XRenderApplication = _XRenderApplication__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/x-render/index.ts?");
 
 /***/ }),
 

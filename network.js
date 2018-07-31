@@ -87,14 +87,51 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/network/Define.ts":
+/*!*******************************!*\
+  !*** ./src/network/Define.ts ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/network/Define.ts?");
+
+/***/ }),
+
+/***/ "./src/network/Network.ts":
+/*!********************************!*\
+  !*** ./src/network/Network.ts ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar Network = /** @class */ (function () {\n    function Network() {\n    }\n    Network.prototype.getNetworkConfig = function (configName) {\n    };\n    // 请求方式\n    Network.post = function (url, sendData, network) { };\n    Network.put = function (url, sendData, network) { };\n    Network.get = function (url, sendData, network) { };\n    Network.delete = function (url, sendData, network) { };\n    Network.head = function (url, sendData, network) { };\n    return Network;\n}());\n/* harmony default export */ __webpack_exports__[\"default\"] = (Network);\n\n\n//# sourceURL=webpack:///./src/network/Network.ts?");
+
+/***/ }),
+
+/***/ "./src/network/Service.ts":
+/*!********************************!*\
+  !*** ./src/network/Service.ts ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/network/Service.ts?");
+
+/***/ }),
+
 /***/ "./src/network/index.ts":
 /*!******************************!*\
   !*** ./src/network/index.ts ***!
   \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default, Define, Service, Get, Post, Put, Delete, Head */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31mA file specified in tsconfig.json could not be found: /Users/kellerlong/project/x-view/index.d.ts\\u001b[39m\\n    at Object.loader (/Users/kellerlong/project/x-view/node_modules/ts-loader/dist/index.js:18:18)\");\n\n//# sourceURL=webpack:///./src/network/index.ts?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Define\", function() { return Define; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Service\", function() { return Service; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Get\", function() { return Get; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Post\", function() { return Post; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Put\", function() { return Put; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Delete\", function() { return Delete; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Head\", function() { return Head; });\n/* harmony import */ var _Define__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Define */ \"./src/network/Define.ts\");\n/* harmony import */ var _Service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Service */ \"./src/network/Service.ts\");\n/* harmony import */ var _Network__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Network */ \"./src/network/Network.ts\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Network__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar Define = _Define__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nvar Service = _Service__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar Get = _Network__WEBPACK_IMPORTED_MODULE_2__[\"default\"].get;\nvar Post = _Network__WEBPACK_IMPORTED_MODULE_2__[\"default\"].post;\nvar Put = _Network__WEBPACK_IMPORTED_MODULE_2__[\"default\"].put;\nvar Delete = _Network__WEBPACK_IMPORTED_MODULE_2__[\"default\"].delete;\nvar Head = _Network__WEBPACK_IMPORTED_MODULE_2__[\"default\"].head;\n\n\n//# sourceURL=webpack:///./src/network/index.ts?");
 
 /***/ }),
 

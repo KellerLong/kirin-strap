@@ -87,14 +87,75 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/model/Effect.ts":
+/*!*****************************!*\
+  !*** ./src/model/Effect.ts ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Effect.ts?");
+
+/***/ }),
+
+/***/ "./src/model/Model.ts":
+/*!****************************!*\
+  !*** ./src/model/Model.ts ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Model.ts?");
+
+/***/ }),
+
+/***/ "./src/model/Reducer.ts":
+/*!******************************!*\
+  !*** ./src/model/Reducer.ts ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Reducer.ts?");
+
+/***/ }),
+
+/***/ "./src/model/State.ts":
+/*!****************************!*\
+  !*** ./src/model/State.ts ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/State.ts?");
+
+/***/ }),
+
+/***/ "./src/model/Subscription.ts":
+/*!***********************************!*\
+  !*** ./src/model/Subscription.ts ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Subscription.ts?");
+
+/***/ }),
+
 /***/ "./src/model/index.ts":
 /*!****************************!*\
   !*** ./src/model/index.ts ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: Effect, Model, Reducer, State, Subscription */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31mA file specified in tsconfig.json could not be found: /Users/kellerlong/project/x-view/index.d.ts\\u001b[39m\\n    at Object.loader (/Users/kellerlong/project/x-view/node_modules/ts-loader/dist/index.js:18:18)\");\n\n//# sourceURL=webpack:///./src/model/index.ts?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Effect\", function() { return Effect; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Model\", function() { return Model; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Reducer\", function() { return Reducer; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"State\", function() { return State; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Subscription\", function() { return Subscription; });\n/* harmony import */ var _Effect__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Effect */ \"./src/model/Effect.ts\");\n/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Model */ \"./src/model/Model.ts\");\n/* harmony import */ var _Reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Reducer */ \"./src/model/Reducer.ts\");\n/* harmony import */ var _State__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./State */ \"./src/model/State.ts\");\n/* harmony import */ var _Subscription__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Subscription */ \"./src/model/Subscription.ts\");\n\n\n\n\n\nvar Effect = _Effect__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nvar Model = _Model__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar Reducer = _Reducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar State = _State__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nvar Subscription = _Subscription__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/model/index.ts?");
 
 /***/ }),
 

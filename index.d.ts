@@ -1,4 +1,5 @@
-declare module 'x-render' {
-  import XRender from './src/x-render/index';
-  return XRender;
+export default class XRender {
+  constructor();
 }
+
+export declare function XRenderApplication(constructor: Function): void;

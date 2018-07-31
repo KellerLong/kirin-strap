@@ -87,14 +87,27 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/util/AutoWrite.ts":
+/*!*******************************!*\
+  !*** ./src/util/AutoWrite.ts ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/util/AutoWrite.ts?");
+
+/***/ }),
+
 /***/ "./src/util/index.ts":
 /*!***************************!*\
   !*** ./src/util/index.ts ***!
   \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: AutoWrite */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31mA file specified in tsconfig.json could not be found: /Users/kellerlong/project/x-view/index.d.ts\\u001b[39m\\n    at Object.loader (/Users/kellerlong/project/x-view/node_modules/ts-loader/dist/index.js:18:18)\");\n\n//# sourceURL=webpack:///./src/util/index.ts?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AutoWrite\", function() { return AutoWrite; });\n/* harmony import */ var _AutoWrite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AutoWrite */ \"./src/util/AutoWrite.ts\");\n\nvar AutoWrite = _AutoWrite__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/util/index.ts?");
 
 /***/ }),
 

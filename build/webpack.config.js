@@ -6,6 +6,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const YAML = require('yamljs');
 // const xOption = process.cwd();
+
+// 编译前做的事
+// 获取 yml 配置信息
+// 获取所有页面
+util.gerRouterList();
+
 /****************************************************
  * config entry
  ***************************************************/

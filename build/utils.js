@@ -142,6 +142,13 @@ class Util {
       }
     ];
   }
+
+  gerRouterList() {
+    const cwd = process.cwd();
+    // 获取所有page
+    const allPages = request.context(path.join(cwd, 'pages'), true, /\.tsx$/);
+    console.log(allPages);
+  }
 }
 
 module.exports = new Util();

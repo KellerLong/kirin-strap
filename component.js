@@ -231,6 +231,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n
 
 /***/ }),
 
+/***/ "./src/component/Model.ts":
+/*!********************************!*\
+  !*** ./src/component/Model.ts ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Model.ts?");
+
+/***/ }),
+
 /***/ "./src/component/Route.ts":
 /*!********************************!*\
   !*** ./src/component/Route.ts ***!
@@ -243,15 +255,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 路由\n/* harmony default
 
 /***/ }),
 
+/***/ "./src/component/State.ts":
+/*!********************************!*\
+  !*** ./src/component/State.ts ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/State.ts?");
+
+/***/ }),
+
 /***/ "./src/component/index.ts":
 /*!********************************!*\
   !*** ./src/component/index.ts ***!
   \********************************/
-/*! exports provided: Cache, ComponentLess, Route, Component, default */
+/*! exports provided: Cache, ComponentLess, Route, Component, Model, State, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Cache\", function() { return Cache; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ComponentLess\", function() { return ComponentLess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Route\", function() { return Route; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Component\", function() { return Component; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Cache__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cache */ \"./src/component/Cache.ts\");\n/* harmony import */ var _ComponentLess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLess */ \"./src/component/ComponentLess.ts\");\n/* harmony import */ var _Component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Component */ \"./src/component/Component.ts\");\n/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Route */ \"./src/component/Route.ts\");\n\n\n\n\n\n// component 部分入口\n// 组件\nvar Cache = _Cache__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar ComponentLess = _ComponentLess__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar Route = _Route__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nvar Component = _Component__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n/* harmony default export */ __webpack_exports__[\"default\"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n\n//# sourceURL=webpack:///./src/component/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Cache\", function() { return Cache; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ComponentLess\", function() { return ComponentLess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Route\", function() { return Route; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Component\", function() { return Component; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Model\", function() { return Model; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"State\", function() { return State; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Cache__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cache */ \"./src/component/Cache.ts\");\n/* harmony import */ var _ComponentLess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLess */ \"./src/component/ComponentLess.ts\");\n/* harmony import */ var _Component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Component */ \"./src/component/Component.ts\");\n/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Route */ \"./src/component/Route.ts\");\n/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Model */ \"./src/component/Model.ts\");\n/* harmony import */ var _State__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./State */ \"./src/component/State.ts\");\n\n\n\n\n\n\n\n// component 部分入口\n// 组件\nvar Cache = _Cache__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar ComponentLess = _ComponentLess__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar Route = _Route__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nvar Component = _Component__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nvar Model = _Model__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nvar State = _State__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\n/* harmony default export */ __webpack_exports__[\"default\"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n\n//# sourceURL=webpack:///./src/component/index.ts?");
 
 /***/ }),
 

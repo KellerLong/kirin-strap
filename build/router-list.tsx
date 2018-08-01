@@ -9,13 +9,13 @@ const { ConnectedRouter } = routerRedux;
 const router = ({ history, app }) => (
   <ConnectedRouter history={history}>
     <Switch>
-      { routerConfig.map(({ component, path }, key) => {
+      { routerConfig.map(({ component, path, models }, key) => {
         return (
           <Route
             key={key}
             exact={true}
             path={path}
-            component={dynamic({ app, component, models: () => [] })}
+            component={dynamic({ app, component, models: () => models })}
           />
         );
       }) }

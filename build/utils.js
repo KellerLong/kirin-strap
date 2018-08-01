@@ -160,10 +160,15 @@ class Util {
       // 读取文件
       const code = fs.readFileSync(filePath, {encoding: 'utf-8'});
 
-      code.replace(/\@Route\((.*)\)/ig, (str, $1) => {
+      code.replace(/\@Route\((.*)\)/ig, (str, path) => {
+        const models = [];
+        code.replace(/\@Model\((.*)\)/ig, (str, modelName) => {
+          models.push(`import('models/${modelName}')`)
+        })
         routerConfig.push(` {
-    path: ${$1},
+    path: ${path},
     component: () => import('${pagePath}'),
+    models: [${models.join(',')}],
   }`);
       });
 

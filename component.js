@@ -203,7 +203,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/component/Cache.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Cache.ts?");
 
 /***/ }),
 
@@ -215,7 +215,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony d
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/component/Component.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n// 组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Component.ts?");
 
 /***/ }),
 
@@ -227,7 +227,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 组件装饰器\n/* harmon
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/component/ComponentLess.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/ComponentLess.ts?");
 
 /***/ }),
 
@@ -239,7 +239,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
 
 /***/ }),
 

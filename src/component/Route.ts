@@ -1,2 +1,2 @@
 // 路由
-export default () => {};
+export default (Component) => Component;

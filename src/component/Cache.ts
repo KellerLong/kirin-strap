@@ -1,3 +1,3 @@
 // 缓存组件
 
-export default () => {};
+export default (Component) => Component;

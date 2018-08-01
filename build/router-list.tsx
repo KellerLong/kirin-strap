@@ -2,22 +2,23 @@ import React from 'react';
 import dva from 'dva';
 import { Router, Route, Switch, routerRedux, Redirect } from 'dva/router';
 import dynamic from 'dva/dynamic';
-import routerConfig from './router-config';
+import routerConfig from './router-config.ts';
 
 const { ConnectedRouter } = routerRedux;
 
 const router = ({ history, app }) => (
   <ConnectedRouter history={history}>
     <Switch>
-      {routerConfig.map(({component, path}) => {
+      { routerConfig.map(({ component, path }, key) => {
         return (
           <Route
+            key={key}
             exact={true}
             path={path}
             component={dynamic({ app, component, models: () => [] })}
           />
-        )
-      })}
+        );
+      }) }
 
     </Switch>
   </ConnectedRouter>

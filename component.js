@@ -3360,7 +3360,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Model.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Model) { return function (Component, Name) {\n    Component[Name] = Component.props[Name];\n    return Model;\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Model.ts?");
 
 /***/ }),
 

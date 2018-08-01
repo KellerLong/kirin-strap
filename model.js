@@ -95,7 +95,7 @@ module.exports =
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Effect.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util */ \"./src/model/util.ts\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__[\"createNote\"])('effects'));\n\n\n//# sourceURL=webpack:///./src/model/Effect.ts?");
 
 /***/ }),
 
@@ -107,7 +107,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Model.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar __assign = (undefined && undefined.__assign) || Object.assign || function(t) {\n    for (var s, i = 1, n = arguments.length; i < n; i++) {\n        s = arguments[i];\n        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n            t[p] = s[p];\n    }\n    return t;\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (obj) {\n    var object = new obj();\n    return __assign({}, object, { namespace: obj.name, state: object.state || {}, reducers: object.reducers || {}, effects: object.effects || {}, subscriptions: object.subscription || {} });\n});\n\n\n//# sourceURL=webpack:///./src/model/Model.ts?");
 
 /***/ }),
 
@@ -119,7 +119,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Reducer.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util */ \"./src/model/util.ts\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__[\"createNote\"])('reducers'));\n\n\n//# sourceURL=webpack:///./src/model/Reducer.ts?");
 
 /***/ }),
 
@@ -131,7 +131,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/State.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar __assign = (undefined && undefined.__assign) || Object.assign || function(t) {\n    for (var s, i = 1, n = arguments.length; i < n; i++) {\n        s = arguments[i];\n        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n            t[p] = s[p];\n    }\n    return t;\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (options) {\n    return function (object, key) {\n        var _a, _b;\n        object.state = __assign({}, object.state || {}, (_a = {}, _a[key] = options.default || null, _a));\n        if (options.set) {\n            // 新增设置该属性的 reducers\n            var setFun = function (state, action) {\n                state[key] = action.payload;\n                return __assign({}, state);\n            };\n            var name_1 = key.replace(/\\b(\\w)/g, function (val) { return val.toUpperCase(); });\n            object.reducers = __assign({}, object.reducers || {}, (_b = {}, _b[\"set\" + name_1] = setFun, _b));\n        }\n    };\n});\n\n\n//# sourceURL=webpack:///./src/model/State.ts?");
 
 /***/ }),
 
@@ -143,7 +143,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/model/Subscription.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util */ \"./src/model/util.ts\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__[\"createNote\"])('subscriptions'));\n\n\n//# sourceURL=webpack:///./src/model/Subscription.ts?");
 
 /***/ }),
 
@@ -156,6 +156,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Effect\", function() { return Effect; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Model\", function() { return Model; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Reducer\", function() { return Reducer; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"State\", function() { return State; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Subscription\", function() { return Subscription; });\n/* harmony import */ var _Effect__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Effect */ \"./src/model/Effect.ts\");\n/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Model */ \"./src/model/Model.ts\");\n/* harmony import */ var _Reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Reducer */ \"./src/model/Reducer.ts\");\n/* harmony import */ var _State__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./State */ \"./src/model/State.ts\");\n/* harmony import */ var _Subscription__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Subscription */ \"./src/model/Subscription.ts\");\n\n\n\n\n\nvar Effect = _Effect__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nvar Model = _Model__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar Reducer = _Reducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar State = _State__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nvar Subscription = _Subscription__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/model/index.ts?");
+
+/***/ }),
+
+/***/ "./src/model/util.ts":
+/*!***************************!*\
+  !*** ./src/model/util.ts ***!
+  \***************************/
+/*! exports provided: createNote */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"createNote\", function() { return createNote; });\nvar __assign = (undefined && undefined.__assign) || Object.assign || function(t) {\n    for (var s, i = 1, n = arguments.length; i < n; i++) {\n        s = arguments[i];\n        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n            t[p] = s[p];\n    }\n    return t;\n};\nvar createNote = function (type) {\n    return function (object, key, content) {\n        var _a;\n        object[type] = __assign({}, object[type], (_a = {}, _a[key] = content.value, _a));\n    };\n};\n\n\n//# sourceURL=webpack:///./src/model/util.ts?");
 
 /***/ }),
 

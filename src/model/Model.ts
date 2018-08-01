@@ -1,6 +1,6 @@
 export default (obj: any) => {
   const object = new obj();
-  return {
+  const newObj = {
     ...object, // 防止TS报错  其实原型连浅拷贝原因 这个加上去什么都没有
     namespace: obj.name,
     state: object.state || {},
@@ -8,4 +8,5 @@ export default (obj: any) => {
     effects: object.effects || {},
     subscriptions: object.subscription || {},
   };
+  return newObj;
 };

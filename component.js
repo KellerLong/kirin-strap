@@ -251,7 +251,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) { return function (Component) { return Component; }; });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
 
 /***/ }),
 

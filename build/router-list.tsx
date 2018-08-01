@@ -1,16 +1,39 @@
 import React from 'react';
+import dva from 'dva';
 import { Router, Route, Switch, routerRedux, Redirect } from 'dva/router';
-const { ConnectedRouter } = routerRedux;
 import dynamic from 'dva/dynamic';
+import routerConfig from './router-config';
 
-export default ({ history, app }) => (
+const { ConnectedRouter } = routerRedux;
+
+const router = ({ history, app }) => (
   <ConnectedRouter history={history}>
     <Switch>
-      <Route
-        exact={true}
-        path={path}
-        component={dynamic({ app, component, models: []})}
-      />
+      {routerConfig.map(({component, path}) => {
+        return (
+          <Route
+            exact={true}
+            path={path}
+            component={dynamic({ app, component, models: () => [] })}
+          />
+        )
+      })}
+
     </Switch>
   </ConnectedRouter>
 );
+
+// 1. Initialize
+const app = dva();
+
+// 2. Plugins
+// app.use({});
+
+// 3. Model
+// app.model(global);
+
+// 4. Router
+app.router(router);
+
+// 5. Start
+app.start('#root');

@@ -1,5 +1,6 @@
 const webpack  = require("webpack");
 const path = require("path");
+const fs = require("fs");
 /**
  * some function of webpack use
  */
@@ -146,8 +147,45 @@ class Util {
   gerRouterList() {
     const cwd = process.cwd();
     // 获取所有page
-    const allPages = request.context(path.join(cwd, 'pages'), true, /\.tsx$/);
-    console.log(allPages);
+    const allPages = this.getFile(path.join(cwd, 'pages'), 'pages');
+    // 读取路由配置
+    const pageRouter = this.getRouterConfig(allPages);
+  }
+
+  getRouterConfig(pageList) {
+    let routerConfig = [];
+    const cwd = process.cwd();
+    pageList.map(pagePath => {
+      const filePath = path.join(cwd, pagePath);
+      // 读取文件
+      const code = fs.readFileSync(filePath, {encoding: 'utf-8'});
+
+      code.replace(/\@Route\((.*)\)/ig, (str, $1) => {
+        routerConfig.push(` {
+    path: ${$1},
+    component: () => import('${pagePath}'),
+  }`);
+      });
+
+      fs.writeFileSync(path.join(__dirname, 'router-config.ts'), `export default [\n${routerConfig.join(',\n')}\n];\n`);
+      console.log(routerConfig);
+    });
+  }
+
+  getFile(pathFull, rootPath) {
+    const allFiles = fs.readdirSync(pathFull);
+    let retArray = [];
+    allFiles.map( filePath => {
+      const longPath = path.join(pathFull,filePath);
+      const stat = fs.statSync(longPath);
+      if (stat.isFile() && /\.tsx$/.test(filePath)) {
+        retArray.push(`${rootPath}/${filePath}`);
+      }
+      if (stat.isDirectory()) {
+        retArray = retArray.concat(this.getFile(longPath, `${rootPath}/${filePath}`));
+      }
+    });
+    return retArray;
   }
 }
 

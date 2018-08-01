@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/KellerLong/x-render#readme",
   "dependencies": {
+    "@types/react": "^16.4.7",
     "commander": "^2.16.0",
     "dva": "2.1.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -35,6 +36,7 @@
     "postcss": "^7.0.1",
     "postcss-loader": "^2.1.6",
     "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "style-loader": "^0.21.0",
     "stylelint": "^9.4.0",
     "ts-loader": "^4.4.2",

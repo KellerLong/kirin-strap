@@ -10,7 +10,7 @@ const YAML = require('yamljs');
 // 编译前做的事
 // 获取 yml 配置信息
 // 获取所有页面
-util.gerRouterList();
+utils.gerRouterList();
 
 /****************************************************
  * config entry
@@ -18,7 +18,7 @@ util.gerRouterList();
 const entry = {};
 
 // ./src/index.ts
-entry.app = [`${__dirname}/router-config.ts`,`./Application.ts`];
+entry.app = [`${__dirname}/router-list.tsx`, `./Application.ts`];
 
 
 /****************************************************
@@ -36,12 +36,12 @@ output.filename = `static/js/[name]-[hash:5].js`;
 const resolve = {
   extensions: [".ts", ".tsx",  ".less", ".js"],
   alias: {
-    'assets': path.resolve('src/assets'),
-    'entities': path.resolve('src/components'),
-    'pages': path.resolve('src/pages'),
-    'models': path.resolve('src/models'),
-    'styles': path.resolve('src/styles'),
-    'services': path.resolve('src/services'),
+    'assets': path.resolve('assets'),
+    'entities': path.resolve('components'),
+    'pages': path.resolve('pages'),
+    'models': path.resolve('models'),
+    'styles': path.resolve('styles'),
+    'services': path.resolve('services'),
   }
 };
 
@@ -62,15 +62,16 @@ const moduleOptions = {
 // ts
 moduleOptions.rules.push({
   test: /\.(ts|tsx)$/,
-  exclude: /node_modules/,
   loader: 'ts-loader',
+  options: {
+    allowTsInNodeModules: true
+  }
 });
 
 // tslint
 moduleOptions.rules.push({
   test: /\.(ts|tsx)$/,
   enforce: 'pre',
-  exclude: /node_modules/,
   loader: 'tslint-loader',
 });
 

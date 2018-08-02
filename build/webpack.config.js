@@ -72,6 +72,7 @@ moduleOptions.rules.push({
 moduleOptions.rules.push({
   test: /\.(ts|tsx)$/,
   enforce: 'pre',
+  exclude: /node_modules/,
   loader: 'tslint-loader',
 });
 

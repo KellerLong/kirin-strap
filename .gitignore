@@ -166,3 +166,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 src
+tsconfig.json
+tslint.json
+webpack.config.js

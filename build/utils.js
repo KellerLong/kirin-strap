@@ -156,13 +156,13 @@ class Util {
     let routerConfig = [];
     const cwd = process.cwd();
     pageList.map(pagePath => {
-      const filePath = path.join(cwd, pagePath);
+      const filePath = path.join(cwd, 'src', pagePath);
       // 读取文件
       const code = fs.readFileSync(filePath, {encoding: 'utf-8'});
 
       code.replace(/\@Route\((.*)\)/ig, (str, path) => {
         const models = [];
-        code.replace(/\@Model\((.*)\)/ig, (str, modelName) => {
+        code.replace(/\@Model\([\'|\"](.*)[\'|\"]\)/ig, (str, modelName) => {
           models.push(`import('src/models/${modelName}')`)
         })
         routerConfig.push(` {

@@ -173,7 +173,6 @@ class Util {
       });
 
       fs.writeFileSync(path.join(__dirname, 'router-config.ts'), `export default [\n${routerConfig.join(',\n')}\n];\n`);
-      console.log(routerConfig);
     });
   }
 

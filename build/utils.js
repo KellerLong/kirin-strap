@@ -147,7 +147,7 @@ class Util {
   gerRouterList() {
     const cwd = process.cwd();
     // 获取所有page
-    const allPages = this.getFile(path.join(cwd, 'src/pages'), 'pages');
+    const allPages = this.getFile(path.join(cwd, 'src', 'pages'), 'pages');
     // 读取路由配置
     const pageRouter = this.getRouterConfig(allPages);
   }

@@ -36,12 +36,12 @@ output.filename = `static/js/[name]-[hash:5].js`;
 const resolve = {
   extensions: [".ts", ".tsx",  ".less", ".js"],
   alias: {
-    'assets': path.resolve('assets'),
-    'entities': path.resolve('components'),
-    'pages': path.resolve('pages'),
-    'models': path.resolve('models'),
-    'styles': path.resolve('styles'),
-    'services': path.resolve('services'),
+    'assets': path.resolve('src/assets'),
+    'entities': path.resolve('src/components'),
+    'pages': path.resolve('src/pages'),
+    'models': path.resolve('src/models'),
+    'styles': path.resolve('src/styles'),
+    'services': path.resolve('src/services'),
   }
 };
 

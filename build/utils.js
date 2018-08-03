@@ -163,7 +163,7 @@ class Util {
       code.replace(/\@Route\((.*)\)/ig, (str, path) => {
         const models = [];
         code.replace(/\@Model\([\'|\"](.*)[\'|\"]\)/ig, (str, modelName) => {
-          models.push(`import('src/models/${modelName}')`)
+          models.push(`import('models/${modelName}.ts')`)
         })
         routerConfig.push(` {
     path: ${path},

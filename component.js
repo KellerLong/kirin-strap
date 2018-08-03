@@ -3316,18 +3316,6 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 
 /***/ }),
 
-/***/ "./src/component/Cache.ts":
-/*!********************************!*\
-  !*** ./src/component/Cache.ts ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/Cache.ts?");
-
-/***/ }),
-
 /***/ "./src/component/Component.ts":
 /*!************************************!*\
   !*** ./src/component/Component.ts ***!
@@ -3336,7 +3324,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony d
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) {\n    return Component;\n});\n\n\n//# sourceURL=webpack:///./src/component/Component.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dva */ \"./node_modules/dva/index.js\");\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dva__WEBPACK_IMPORTED_MODULE_0__);\n\n// 组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) {\n    console.log(Component);\n    var res = Object(dva__WEBPACK_IMPORTED_MODULE_0__[\"connect\"])(function (model) { return model; })(Component);\n    console.log(res);\n    return Component;\n});\n\n\n//# sourceURL=webpack:///./src/component/Component.ts?");
 
 /***/ }),
 
@@ -3360,7 +3348,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Model) { return function (Component, Name) {\n    // Component[Name] = Component.props[Name];\n    return Model;\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Model.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (ModelPath) { return function (Component, Name) {\n    // Component[Name] = Component.props[Name];\n    Component.__models = Component.__models || [];\n    Component.__models.push(Name.replace(/\\b(\\w)/g, function (val) { return val.toUpperCase(); }));\n    return Component;\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Model.ts?");
 
 /***/ }),
 
@@ -3372,7 +3360,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dva */ \"./node_modules/dva/index.js\");\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dva__WEBPACK_IMPORTED_MODULE_0__);\n\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) { return function (Component) {\n    console.log(Component, path);\n    var res = Object(dva__WEBPACK_IMPORTED_MODULE_0__[\"connect\"])(function (model) { return model; })(Component);\n    console.log(res);\n    return res;\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) { return function (Component) {\n    return Component;\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
+
+/***/ }),
+
+/***/ "./src/component/SSR.ts":
+/*!******************************!*\
+  !*** ./src/component/SSR.ts ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/SSR.ts?");
 
 /***/ }),
 
@@ -3392,11 +3392,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /*!********************************!*\
   !*** ./src/component/index.ts ***!
   \********************************/
-/*! exports provided: Cache, ComponentLess, Route, Component, Model, State, default */
+/*! exports provided: SSR, ComponentLess, Route, Component, Model, State, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Cache\", function() { return Cache; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ComponentLess\", function() { return ComponentLess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Route\", function() { return Route; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Component\", function() { return Component; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Model\", function() { return Model; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"State\", function() { return State; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Cache__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cache */ \"./src/component/Cache.ts\");\n/* harmony import */ var _ComponentLess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLess */ \"./src/component/ComponentLess.ts\");\n/* harmony import */ var _Component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Component */ \"./src/component/Component.ts\");\n/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Route */ \"./src/component/Route.ts\");\n/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Model */ \"./src/component/Model.ts\");\n/* harmony import */ var _State__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./State */ \"./src/component/State.ts\");\n\n\n\n\n\n\n\n// component 部分入口\n// 组件\nvar Cache = _Cache__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar ComponentLess = _ComponentLess__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar Route = _Route__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nvar Component = _Component__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nvar Model = _Model__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nvar State = _State__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\n/* harmony default export */ __webpack_exports__[\"default\"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n\n//# sourceURL=webpack:///./src/component/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SSR\", function() { return SSR; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ComponentLess\", function() { return ComponentLess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Route\", function() { return Route; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Component\", function() { return Component; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Model\", function() { return Model; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"State\", function() { return State; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _SSR__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SSR */ \"./src/component/SSR.ts\");\n/* harmony import */ var _ComponentLess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLess */ \"./src/component/ComponentLess.ts\");\n/* harmony import */ var _Component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Component */ \"./src/component/Component.ts\");\n/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Route */ \"./src/component/Route.ts\");\n/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Model */ \"./src/component/Model.ts\");\n/* harmony import */ var _State__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./State */ \"./src/component/State.ts\");\n\n\n\n\n\n\n\n// component 部分入口\n// 组件\nvar SSR = _SSR__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar ComponentLess = _ComponentLess__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar Route = _Route__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nvar Component = _Component__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nvar Model = _Model__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nvar State = _State__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\n/* harmony default export */ __webpack_exports__[\"default\"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n\n//# sourceURL=webpack:///./src/component/index.ts?");
 
 /***/ }),
 

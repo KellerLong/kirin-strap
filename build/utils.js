@@ -147,7 +147,7 @@ class Util {
   gerRouterList() {
     const cwd = process.cwd();
     // 获取所有page
-    const allPages = this.getFile(path.join(cwd, 'pages'), 'pages');
+    const allPages = this.getFile(path.join(cwd, 'src/pages'), 'pages');
     // 读取路由配置
     const pageRouter = this.getRouterConfig(allPages);
   }
@@ -163,7 +163,7 @@ class Util {
       code.replace(/\@Route\((.*)\)/ig, (str, path) => {
         const models = [];
         code.replace(/\@Model\((.*)\)/ig, (str, modelName) => {
-          models.push(`import('models/${modelName}')`)
+          models.push(`import('src/models/${modelName}')`)
         })
         routerConfig.push(` {
     path: ${path},

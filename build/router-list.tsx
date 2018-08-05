@@ -3,10 +3,10 @@ import dva from 'dva';
 import { Router, Route, Switch, routerRedux, Redirect } from 'dva/router';
 import dynamic from 'dva/dynamic';
 import routerConfig from './router-config.ts';
-import application from 'Application.ts';
+import application from 'src/Application.ts';
 import Network from 'x-render/network';
 
-Network.prototype.onNetworkRequestAppBefore = application.onNetworkRequestBefore;
+(Network.prototype as any).onNetworkRequestAppBefore = (application as any).onNetworkRequestBefore;
 
 const { ConnectedRouter } = routerRedux;
 

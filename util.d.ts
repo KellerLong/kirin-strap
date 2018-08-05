@@ -1,1 +1,1 @@
-export declare function util(obj: any): (a, b) => void;
+export declare function AutoWrite(obj: any): (a, b) => void;

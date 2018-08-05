@@ -95,7 +95,7 @@ module.exports =
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/util/AutoWrite.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Obj) { return function (prototype, name) {\n    prototype[name] = new Obj();\n}; });\n\n\n//# sourceURL=webpack:///./src/util/AutoWrite.ts?");
 
 /***/ }),
 

@@ -1,0 +1,1 @@
+export declare function util(obj: any): (a, b) => void;

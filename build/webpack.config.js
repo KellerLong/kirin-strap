@@ -18,7 +18,7 @@ utils.gerRouterList();
 const entry = {};
 
 // ./src/index.ts
-entry.app = [`${__dirname}/router-list.tsx`, `./src/Application.ts`];
+entry.app = [`${__dirname}/router-list.tsx`];
 
 
 /****************************************************

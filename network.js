@@ -119,7 +119,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar __awaiter = (undefined &&
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () { });\n\n\n//# sourceURL=webpack:///./src/network/Service.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (constructor) {\n    console.log('xxx');\n});\n\n\n//# sourceURL=webpack:///./src/network/Service.ts?");
 
 /***/ }),
 

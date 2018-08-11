@@ -8,7 +8,7 @@ class Util {
   // 默认值配置
   constructor() {
     const yaml = require('js-yaml');
-    this.XRenderOption = yaml.safeLoad(path.resolve('config/.x-render.yml', 'utf8'));
+    this.XRenderOption = yaml.safeLoad(path.resolve('config/.x-render.yml'), 'utf8');
   }
 
   /**

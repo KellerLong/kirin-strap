@@ -133,6 +133,6 @@ let target = 'web';
 //   target = 'node';
 // }
 
-const mode = 'production'; // 'development'; // process.env.NODE_ENV;
+const mode = 'development'; // process.env.NODE_ENV;
 
 module.exports = {entry, mode, output, module: moduleOptions, resolve, plugins, target};

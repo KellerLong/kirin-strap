@@ -6,11 +6,9 @@ const fs = require("fs");
  */
 class Util {
   // 默认值配置
-  XRenderOption = {};
-
   constructor() {
-    const YAML = require('yamljs');
-    this.XRenderOption = YAML.load(path.resolve('config/.x-render.yml'));
+    const yaml = require('js-yaml');
+    this.XRenderOption = yaml.safeLoad(path.resolve('config/.x-render.yml', 'utf8'));
   }
 
   /**
@@ -55,7 +53,7 @@ class Util {
     const env               = {};
 
     env.NODE_ENV            = `"${NODE_ENV}"`;
-    env.XRenderOption       = this.XRenderOption;
+    env.XRenderOption       =  this.XRenderOption;
     // env.BUILD_TYPE          = `"${BUILD_TYPE}"`;
 
     return { "process.env" : env };

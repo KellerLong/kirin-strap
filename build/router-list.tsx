@@ -6,9 +6,12 @@ import routerConfig from './router-config.ts';
 import application from 'src/Application.ts';
 import Network from 'x-render/network';
 
+// 获取配置
+(Network.prototype as any).networkOptions = process.env.XRenderOption.network || {};
 (Network.prototype as any).onNetworkRequestAppBefore = (application as any).onNetworkRequestBefore;
 (Network.prototype as any).onNetworkResponseAppAfter = (application as any).onNetworkResponseAfter;
 (Network.prototype as any).onNetworkAppError = (application as any).onNetworkError;
+
 
 const { ConnectedRouter } = routerRedux;
 

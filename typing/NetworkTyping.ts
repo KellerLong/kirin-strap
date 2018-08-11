@@ -1,5 +1,6 @@
 namespace NetWork {
   export interface IOption {
+    baseURL: string;
     url: string;
     timeout: number;
     type: string;

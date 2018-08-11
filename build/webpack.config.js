@@ -4,10 +4,6 @@ const HtmlPlugin = require('html-webpack-plugin');
 const utils = require('./utils');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const YAML = require('yamljs');
-const defaultOption = YAML.load(path.resolve('config/.x-render.yml'));
-
-console.log(defaultOption);
 // const xOption = process.cwd();
 
 // 编译前做的事

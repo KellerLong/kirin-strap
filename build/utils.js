@@ -5,8 +5,12 @@ const fs = require("fs");
  * some function of webpack use
  */
 class Util {
-  constructor() {
+  // 默认值配置
+  XRenderOption = {};
 
+  constructor() {
+    const YAML = require('yamljs');
+    this.XRenderOption = YAML.load(path.resolve('config/.x-render.yml'));
   }
 
   /**
@@ -51,6 +55,7 @@ class Util {
     const env               = {};
 
     env.NODE_ENV            = `"${NODE_ENV}"`;
+    env.XRenderOption       = this.XRenderOption;
     // env.BUILD_TYPE          = `"${BUILD_TYPE}"`;
 
     return { "process.env" : env };

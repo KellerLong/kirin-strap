@@ -6,7 +6,7 @@ export enum Level {
   DEBUG,
 }
 
-export interface log {
+export interface ILog {
   fatal(message: any): void;
   error(message: any): void;
   warn(message: any): void;
@@ -14,4 +14,5 @@ export interface log {
   debug(message: any): void;
 }
 
+declare const log: ILog;
 export default log;

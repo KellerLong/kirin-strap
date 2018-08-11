@@ -6,7 +6,6 @@ const fs = require("fs");
  */
 class Util {
   // 默认值配置
-  XRenderOption = {};
 
   constructor() {
     const YAML = require('yamljs');

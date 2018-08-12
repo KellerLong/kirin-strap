@@ -9,7 +9,7 @@ class Util {
 
   constructor() {
     const YAML = require('yamljs');
-    this.XRenderOption = YAML.load(path.resolve('config/.x-render.yml'));
+    this.XRenderOption = YAML.load(path.resolve('config/x-render.yml'));
   }
 
   /**

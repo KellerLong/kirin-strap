@@ -5,7 +5,7 @@
  */
 
 const program = require('commander');
-const webpackConfig = require('../build/webpack.config');
+
 const utils = require('../build/utils');
 
 program
@@ -20,8 +20,19 @@ program
 // 初始化一个项目
 
 if (program.buildClient) {
+  process.env.NODE_ENV = 'development';
+  if (program.pord) {
+    process.env.NODE_ENV = 'production';
+  }
+
   // 编译客户端
-  utils.build(webpackConfig);
+  const webpackConfig = require('../build/webpack.config');
+
+  if (program.dev) {
+    utils.dev(webpackConfig);
+  } else {
+    utils.build(webpackConfig);
+  }
 }
 
 

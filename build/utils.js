@@ -1,6 +1,9 @@
 const webpack  = require("webpack");
 const path = require("path");
 const fs = require("fs");
+const express              = require("express");
+const WebpackDevMiddleware = require("webpack-dev-middleware");
+const WebpackHotMiddleware = require("webpack-hot-middleware");
 /**
  * some function of webpack use
  */
@@ -31,6 +34,42 @@ class Util {
       process.stdout.write( `${stats.toString( outputConfig )}\n` );
       // exit node
       process.exit();
+    });
+  }
+
+  dev(webpackConfig) {
+    const env                   = process.env;
+    // set compiler build
+    const compiler              = webpack( webpackConfig );
+    // create server of express
+    const app                   = express();
+
+    const devConfig             = {};
+    devConfig.publicPath        = webpackConfig.output.publicPath;
+    devConfig.stats             = { colors : true };
+    devConfig.hot               = true;
+    devConfig.quiet             = false;
+    devConfig.noInfo            = false;
+    devConfig.lazy              = false;
+    // create hot middleware and dev middleware
+    const hotMiddleware         = WebpackHotMiddleware( compiler);
+    const devMiddleware         = WebpackDevMiddleware( compiler, devConfig );
+
+    // add event
+    compiler.plugin("compilation", ( compilation ) => {
+      compilation.plugin( "html-webpack-plugin-after-emit", ( data, cb ) => {
+        hotMiddleware.publish({ action : "reload" });
+        // cb();
+      });
+    });
+
+    // http use dev and hot loading
+    app.use( devMiddleware );
+    app.use( hotMiddleware );
+
+    // listen port
+    app.listen( env.PORT_DEVELOP, () => {
+      console.log( `Listening on ${env.PORT_DEVELOP}` );
     });
   }
 

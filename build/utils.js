@@ -4,6 +4,7 @@ const fs = require("fs");
 const express              = require("express");
 const WebpackDevMiddleware = require("webpack-dev-middleware");
 const WebpackHotMiddleware = require("webpack-hot-middleware");
+const Alphabet = require('alphabetjs')
 /**
  * some function of webpack use
  */
@@ -12,7 +13,11 @@ class Util {
 
   constructor() {
     const YAML = require('yamljs');
-    this.XRenderOption = YAML.load(path.resolve('config/application.yml'));
+    try {
+      this.kirinStrapOption = YAML.load(path.resolve('config/application.yml'));
+    } catch (e) {
+      this.kirinStrapOption = {};
+    }
   }
 
   /**
@@ -38,6 +43,8 @@ class Util {
   }
 
   dev(webpackConfig) {
+    const str = Alphabet('kirin','planar');
+    console.log(str);
     const env                   = process.env;
     // set compiler build
     const compiler              = webpack( webpackConfig );
@@ -95,7 +102,7 @@ class Util {
     const env               = {};
 
     env.NODE_ENV            = `"${NODE_ENV}"`;
-    env.XRenderOption       =  JSON.stringify(this.XRenderOption);
+    env.kirinStrapOption       =  JSON.stringify(this.kirinStrapOption);
     // env.BUILD_TYPE          = `"${BUILD_TYPE}"`;
 
     return { "process.env" : env };

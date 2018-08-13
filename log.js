@@ -1,1 +1,137 @@
-module.exports=function(e){var t={};function o(r){if(t[r])return t[r].exports;var n=t[r]={i:r,l:!1,exports:{}};return e[r].call(n.exports,n,n.exports,o),n.l=!0,n.exports}return o.m=e,o.c=t,o.d=function(e,t,r){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(o.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)o.d(r,n,function(t){return e[t]}.bind(null,n));return r},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,"a",t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p="./",o(o.s=0)}([function(e,t,o){e.exports=o(1)},function(e,t,o){"use strict";var r;o.r(t),function(e){!function(e){e[e.FATAL=0]="FATAL",e[e.ERROR=1]="ERROR",e[e.WARN=2]="WARN",e[e.INFO=3]="INFO",e[e.DEBUG=4]="DEBUG"}(e.Level||(e.Level={}))}(r||(r={}));var n=r,l="{time} {type} {content} xxx test {time}",i=function(){function e(e,t){void 0===e&&(e=n.Level.INFO),void 0===t&&(t=l),this.level=n.Level.INFO,this.format=l,this.level=e,this.format=t}return e.prototype.getMessageFormat=function(e){return this.format.replace(/\{time\}/gi,"2018-10-30 21:11.332").replace(/\{type\}/gi,"["+e+"]").replace(/\{content\}/gi,"%o")},e.prototype.error=function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];if(this.level<n.Level.ERROR)return!1;var o=this.getMessageFormat(n.Level[n.Level.ERROR]);console.error.apply(console,[o].concat(e))},e.prototype.info=function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];if(this.level<n.Level.INFO)return!1;var o=this.getMessageFormat(n.Level[n.Level.INFO]);console.info.apply(console,[o].concat(e))},e.prototype.fatal=function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];if(this.level<n.Level.FATAL)return!1;var o=this.getMessageFormat(n.Level[n.Level.FATAL]);console.log.apply(console,[o].concat(e))},e.prototype.warn=function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];if(this.level<n.Level.WARN)return!1;var o=this.getMessageFormat(n.Level[n.Level.WARN]);console.warn.apply(console,[o].concat(e))},e.prototype.debug=function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];if(this.level<n.Level.DEBUG)return!1;var o=this.getMessageFormat(n.Level[n.Level.ERROR]);console.debug.apply(console,[o].concat(e))},e}();t.default=new i}]);
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "./";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/log/Log.ts":
+/*!************************!*\
+  !*** ./src/log/Log.ts ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../typing/LogTyping */ \"./typing/LogTyping.ts\");\n\nvar OUT_FORMAT = '{time} {type} {content} xxx test {time}';\nvar Log = /** @class */ (function () {\n    function Log(level, format) {\n        if (level === void 0) { level = _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.INFO; }\n        if (format === void 0) { format = OUT_FORMAT; }\n        this.level = _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.INFO;\n        this.format = OUT_FORMAT;\n        this.level = level;\n        this.format = format;\n    }\n    Log.prototype.getMessageFormat = function (type) {\n        // 提取内容位置\n        var outputStr = '';\n        // TODO: 差日期格式化\n        outputStr = this.format.replace(/\\{time\\}/ig, '2018-10-30 21:11.332');\n        outputStr = outputStr.replace(/\\{type\\}/ig, \"[\" + type + \"]\");\n        outputStr = outputStr.replace(/\\{content\\}/ig, \"%o\");\n        return outputStr;\n    };\n    Log.prototype.error = function () {\n        var msg = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            msg[_i] = arguments[_i];\n        }\n        if (this.level < _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.ERROR) {\n            return false;\n        }\n        var message = this.getMessageFormat(_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level[_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.ERROR]);\n        console.error.apply(console, [message].concat(msg));\n    };\n    Log.prototype.info = function () {\n        var msg = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            msg[_i] = arguments[_i];\n        }\n        if (this.level < _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.INFO) {\n            return false;\n        }\n        var message = this.getMessageFormat(_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level[_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.INFO]);\n        console.info.apply(console, [message].concat(msg));\n    };\n    Log.prototype.fatal = function () {\n        var msg = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            msg[_i] = arguments[_i];\n        }\n        if (this.level < _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.FATAL) {\n            return false;\n        }\n        var message = this.getMessageFormat(_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level[_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.FATAL]);\n        console.log.apply(console, [message].concat(msg));\n    };\n    Log.prototype.warn = function () {\n        var msg = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            msg[_i] = arguments[_i];\n        }\n        if (this.level < _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.WARN) {\n            return false;\n        }\n        var message = this.getMessageFormat(_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level[_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.WARN]);\n        console.warn.apply(console, [message].concat(msg));\n    };\n    Log.prototype.debug = function () {\n        var msg = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            msg[_i] = arguments[_i];\n        }\n        if (this.level < _typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.DEBUG) {\n            return false;\n        }\n        var message = this.getMessageFormat(_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level[_typing_LogTyping__WEBPACK_IMPORTED_MODULE_0__[\"default\"].Level.ERROR]);\n        console.debug.apply(console, [message].concat(msg));\n    };\n    return Log;\n}());\n/* harmony default export */ __webpack_exports__[\"default\"] = (Log);\n\n\n//# sourceURL=webpack:///./src/log/Log.ts?");
+
+/***/ }),
+
+/***/ "./src/log/index.ts":
+/*!**************************!*\
+  !*** ./src/log/index.ts ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Log */ \"./src/log/Log.ts\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (new _Log__WEBPACK_IMPORTED_MODULE_0__[\"default\"]());\n\n\n//# sourceURL=webpack:///./src/log/index.ts?");
+
+/***/ }),
+
+/***/ "./typing/LogTyping.ts":
+/*!*****************************!*\
+  !*** ./typing/LogTyping.ts ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar LogTyping;\n(function (LogTyping) {\n    var Level;\n    (function (Level) {\n        Level[Level[\"FATAL\"] = 0] = \"FATAL\";\n        Level[Level[\"ERROR\"] = 1] = \"ERROR\";\n        Level[Level[\"WARN\"] = 2] = \"WARN\";\n        Level[Level[\"INFO\"] = 3] = \"INFO\";\n        Level[Level[\"DEBUG\"] = 4] = \"DEBUG\";\n    })(Level = LogTyping.Level || (LogTyping.Level = {}));\n})(LogTyping || (LogTyping = {}));\n/* harmony default export */ __webpack_exports__[\"default\"] = (LogTyping);\n\n\n//# sourceURL=webpack:///./typing/LogTyping.ts?");
+
+/***/ }),
+
+/***/ 0:
+/*!********************************!*\
+  !*** multi ./src/log/index.ts ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./src/log/index.ts */\"./src/log/index.ts\");\n\n\n//# sourceURL=webpack:///multi_./src/log/index.ts?");
+
+/***/ })
+
+/******/ });

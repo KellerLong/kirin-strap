@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // const xOption = process.cwd();
 const NODE_ENV = process.env.NODE_ENV;
+const BUILD_WAY = process.env.BUILD_WAY;
 // 编译前做的事
 // 获取 yml 配置信息
 // 获取所有页面
@@ -19,7 +20,7 @@ const entry = {};
 // ./src/index.ts
 entry.app = [`${__dirname}/router-list.tsx`];
 
-if ('development' === NODE_ENV) {
+if ('development' === BUILD_WAY) {
   entry.app = ['webpack-hot-middleware/client?reload=true'].concat(entry.app);
 }
 
@@ -31,6 +32,10 @@ output.publicPath = './';
 output.path = path.join(process.cwd(), 'dist');
 output.filename = `static/js/[name]-[hash:5].js`;
 
+if ('development' === BUILD_WAY) {
+  output.path = '/';
+  output.publicPath = '/';
+}
 
 /****************************************************
  * config resolve
@@ -126,6 +131,10 @@ const plugins = [stylePrivate];
 plugins.push(new webpack.DefinePlugin(utils.getConfigDefinePlugin()));
 plugins.push(new HtmlPlugin(utils.getConfigHtmlTemplate()));
 
+if ('development' === BUILD_WAY) {
+  plugins.push(new webpack.HotModuleReplacementPlugin());
+  plugins.push(new webpack.NoEmitOnErrorsPlugin());
+}
 /****************************************************
  * config target
  ***************************************************/

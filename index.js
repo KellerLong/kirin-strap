@@ -115,11 +115,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /*!**********************************!*\
   !*** ./src/kirin-strap/index.ts ***!
   \**********************************/
-/*! exports provided: default, XRenderApplication */
+/*! exports provided: default, KirinStrapApplication */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"XRenderApplication\", function() { return XRenderApplication; });\n/* harmony import */ var _KirinStrapApplication__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KirinStrapApplication */ \"./src/kirin-strap/KirinStrapApplication.ts\");\n/* harmony import */ var _KirinStrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./KirinStrap */ \"./src/kirin-strap/KirinStrap.ts\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_KirinStrap__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar XRenderApplication = _KirinStrapApplication__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/kirin-strap/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"KirinStrapApplication\", function() { return KirinStrapApplication; });\n/* harmony import */ var _KirinStrapApplication__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KirinStrapApplication */ \"./src/kirin-strap/KirinStrapApplication.ts\");\n/* harmony import */ var _KirinStrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./KirinStrap */ \"./src/kirin-strap/KirinStrap.ts\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_KirinStrap__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar KirinStrapApplication = _KirinStrapApplication__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/kirin-strap/index.ts?");
 
 /***/ }),
 

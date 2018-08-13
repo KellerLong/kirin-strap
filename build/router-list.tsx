@@ -4,7 +4,7 @@ import { Router, Route, Switch, routerRedux, Redirect } from 'dva/router';
 import dynamic from 'dva/dynamic';
 import routerConfig from './router-config.ts';
 import application from 'src/Application.ts';
-import Network from 'x-render/network';
+import Network from 'kirin-strap/network';
 
 // 获取配置
 (Network.prototype as any).networkOptions = process.env.XRenderOption.network || {};

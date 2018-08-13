@@ -1,6 +1,6 @@
 {
-  "name": "x-render",
-  "version": "1.0.0",
+  "name": "kirin-strap",
+  "version": "0.0.1",
   "description": "react client and ssr fast tools",
   "main": "index.js",
   "scripts": {
@@ -9,22 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KellerLong/x-render.git"
+    "url": "git+https://github.com/KellerLong/kirin-strap.git"
   },
   "keywords": [
     "react",
     "ssr",
-    "rast"
+    "fast"
   ],
   "bin": {
-    "x-render": "./bin/x-render.js"
+    "kirin-strap": "./bin/kirin-strap.js"
   },
   "author": "kellerlong <kellerlong@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KellerLong/x-render/issues"
+    "url": "https://github.com/KellerLong/kirin-strap/issues"
   },
-  "homepage": "https://github.com/KellerLong/x-render#readme",
+  "homepage": "https://github.com/KellerLong/kirin-strap#readme",
   "dependencies": {
     "@types/react": "^16.4.7",
     "commander": "^2.16.0",

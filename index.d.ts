@@ -1,5 +1,5 @@
-export default class XRender {
+export default class KirinStrap {
   constructor();
 }
 
-export declare function XRenderApplication(constructor: Function): void;
+export declare function KirinStrapApplication(constructor: Function): void;

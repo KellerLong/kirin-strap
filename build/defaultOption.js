@@ -1,10 +1,14 @@
 module.exports =  {
   active: '',
-  log: 'INFO',
+  log: {
+    level: 'INFO',
+
+  },
   output: {
     dir: 'dist',
     'dir-service': 'dist-service',
   },
+  devPort: 8080,
   network: {
     default: {
       origin: '',

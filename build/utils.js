@@ -4,7 +4,8 @@ const fs = require("fs");
 const express              = require("express");
 const WebpackDevMiddleware = require("webpack-dev-middleware");
 const WebpackHotMiddleware = require("webpack-hot-middleware");
-const Alphabet = require('alphabetjs')
+const Alphabet = require('alphabetjs');
+const defaultOption = require('./defaultOption');
 /**
  * some function of webpack use
  */
@@ -16,8 +17,12 @@ class Util {
     try {
       this.kirinStrapOption = YAML.load(path.resolve('config/application.yml'));
     } catch (e) {
-      this.kirinStrapOption = {};
+      this.kirinStrapOption = defaultOption;
     }
+    if ( this.kirinStrapOption.active ) {
+      this.kirinStrapOption = YAML.load(path.resolve(`config/application-${this.kirinStrapOption.active}.yml`));
+    }
+    this.kirinStrapOption = {...defaultOption, ...this.kirinStrapOption};
   }
 
   /**

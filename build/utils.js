@@ -4,6 +4,7 @@ const fs = require("fs");
 const express              = require("express");
 const WebpackDevMiddleware = require("webpack-dev-middleware");
 const WebpackHotMiddleware = require("webpack-hot-middleware");
+const webpackConfigMock   = require('./webpack.mock');
 const Alphabet = require('alphabetjs');
 const defaultOption = require('./defaultOption');
 /**
@@ -30,26 +31,33 @@ class Util {
    * @param webpackConfig
    */
   build ( webpackConfig ) {
-    // build
-    webpack( webpackConfig, ( error, stats ) => {
-      // error
-      if( error ) throw error;
-      // config of output style
-      const outputConfig        = {};
-      outputConfig.colors       = true;
-      outputConfig.modules      = false;
-      outputConfig.chunks       = false;
-      outputConfig.chunkModules = false;
-      // output stats
-      process.stdout.write( `${stats.toString( outputConfig )}\n` );
-      // exit node
-      process.exit();
+    return new Promise((resolve, reject) => {
+      // build
+      webpack( webpackConfig, ( error, stats ) => {
+        // error
+        if( error ) throw error;
+        // config of output style
+        const outputConfig        = {};
+        outputConfig.colors       = true;
+        outputConfig.modules      = false;
+        outputConfig.chunks       = false;
+        outputConfig.chunkModules = false;
+        // output stats
+        process.stdout.write( `${stats.toString( outputConfig )}\n` );
+        // exit node
+        resolve(true);
+      });
     });
+
   }
 
-  dev(webpackConfig) {
+  async dev(webpackConfig) {
     const str = Alphabet('kirin','planar');
     console.log(str);
+
+
+    await this.build(webpackConfigMock);
+
     const env                   = process.env;
     // set compiler build
     const compiler              = webpack( webpackConfig );

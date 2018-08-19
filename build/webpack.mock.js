@@ -28,6 +28,7 @@ const output = {};
 output.publicPath = './';
 output.path = __dirname;
 output.filename = `mock.js`;
+output.libraryTarget = 'commonjs2';
 
 
 
@@ -46,6 +47,13 @@ moduleOptions.rules.push({
 });
 
 
+const resolve = {
+  extensions: [".ts", ".tsx",   ".js"],
+  alias: {
+    'mock': path.resolve('mock'),
+  }
+};
+
 /****************************************************
  * config target
  ***************************************************/
@@ -55,4 +63,4 @@ let target = 'node';
 
 const mode = 'development';
 
-module.exports = {entry, mode, output, module: moduleOptions, resolve, plugins, target};
+module.exports = {entry, mode, output, module: moduleOptions, resolve, target};

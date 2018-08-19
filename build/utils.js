@@ -7,6 +7,8 @@ const WebpackHotMiddleware = require("webpack-hot-middleware");
 const webpackConfigMock   = require('./webpack.mock');
 const Alphabet = require('alphabetjs');
 const defaultOption = require('./defaultOption');
+const logger = require('kirin-strap/log').default;
+const Mock = require('mock');
 /**
  * some function of webpack use
  */
@@ -55,14 +57,35 @@ class Util {
     const str = Alphabet('kirin','planar');
     console.log(str);
 
-
-    await this.build(webpackConfigMock);
-
     const env                   = process.env;
     // set compiler build
     const compiler              = webpack( webpackConfig );
     // create server of express
     const app                   = express();
+
+    logger.info('start initialize for mock data');
+    await this.build(webpackConfigMock);
+    const mock = require('./mock').default;
+
+    logger.info('complete mock data');
+
+    console.log(mock);
+
+    app.use('*', (req, res, next) => {
+      console.log(mock, req.originalUrl);
+      mock.map( mockModel => {
+        for ( let key in mockModel ) {
+          if (/^__.*__$/.test(key) && mockModel[key].test(req.originalUrl) ) {
+            let callName = key.replace(/^__(.*)__$/, (str, $1) => $1);
+            const mockData = mockData[callName]();
+            res.send(Mock(mockData));
+          }
+
+        }
+      });
+
+      next();
+    });
 
     const devConfig             = {};
     devConfig.publicPath        = webpackConfig.output.publicPath;

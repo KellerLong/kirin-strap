@@ -10,7 +10,7 @@ const BUILD_WAY = process.env.BUILD_WAY;
 // 编译前做的事
 // 获取 yml 配置信息
 // 获取所有页面
-utils.gerRouterList();
+// utils.gerRouterList();
 
 /****************************************************
  * config entry

@@ -42,7 +42,6 @@ const moduleOptions = {
 moduleOptions.rules.push({
   test: /\.(ts|tsx)$/,
   enforce: 'pre',
-  exclude: /node_modules/,
   loader: 'ts-loader',
 });
 

@@ -8,7 +8,7 @@ const webpackConfigMock   = require('./webpack.mock');
 const Alphabet = require('alphabetjs');
 const defaultOption = require('./defaultOption');
 const logger = require('kirin-strap/log').default;
-const Mock = require('mock');
+const Mock = require('mockjs');
 /**
  * some function of webpack use
  */
@@ -77,8 +77,8 @@ class Util {
         for ( let key in mockModel ) {
           if (/^__.*__$/.test(key) && mockModel[key].test(req.originalUrl) ) {
             let callName = key.replace(/^__(.*)__$/, (str, $1) => $1);
-            const mockData = mockData[callName]();
-            res.send(Mock(mockData));
+            const mockData = mockModel[callName]();
+            res.send(Mock.mock(mockData));
           }
 
         }

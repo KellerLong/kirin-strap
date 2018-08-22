@@ -62,4 +62,7 @@ let target = 'node';
 
 const mode = 'development';
 
-module.exports = {entry, mode, output, module: moduleOptions, resolve, target};
+module.exports = {entry, mode, output, module: moduleOptions, resolve, target, watch: true, watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  }};

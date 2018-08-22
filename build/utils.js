@@ -65,14 +65,12 @@ class Util {
 
     logger.info('start initialize for mock data');
     await this.build(webpackConfigMock);
-    const mock = require('./mock').default;
-
     logger.info('complete mock data');
 
-    console.log(mock);
 
     app.use('*', (req, res, next) => {
-      console.log(mock, req.originalUrl);
+      const mock = eval(fs.readFileSync(__dirname + '/mock.js', 'utf-8')).default;
+      console.log(mock);
       mock.map( mockModel => {
         for ( let key in mockModel ) {
           if (/^__.*__$/.test(key) && mockModel[key].test(req.originalUrl) ) {

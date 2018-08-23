@@ -1,4 +1,18 @@
-import Network from './typing/NetworkTyping';
+declare namespace Network {
+    export interface IOption {
+        origin: string;
+        url: string;
+        timeout: number;
+        type: string;
+        sendData?: Object;
+        header: Object;
+    }
+
+    export interface INetwork {
+        [key: string]: IOption
+    }
+}
+
 
 export declare function Post(url: string, networkName?: string): (prototype, Name) => void;
 export declare function Get(url: string, networkName?: string): (prototype, Name) => void;

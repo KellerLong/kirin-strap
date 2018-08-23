@@ -1,5 +1,4 @@
-import NetworkTyping from './typing/NetworkTyping';
-
+import Network from './typing/NetworkTyping';
 
 export declare function Post(url: string, networkName?: string): (prototype, Name) => void;
 export declare function Get(url: string, networkName?: string): (prototype, Name) => void;
@@ -8,9 +7,11 @@ export declare function Delete(url: string, networkName?: string): (prototype, N
 export declare function Head(url: string, networkName?: string): (prototype, Name) => void;
 export declare function Service(constructor: Function): void;
 
-export default class Network {
+declare class Network {
   constructor();
-  onNetworkRequestBefore(option: NetworkTyping.IOption, next);
-  onNetworkResponseAfter(option: NetworkTyping.IOption, req, next);
-  onNetworkError(option: NetworkTyping.IOption, e: Error, next);
+  onNetworkRequestBefore(option: Network.IOption, next);
+  onNetworkResponseAfter(option: Network.IOption, req, next);
+  onNetworkError(option: Network.IOption, e: Error, next);
 }
+
+export default Network;

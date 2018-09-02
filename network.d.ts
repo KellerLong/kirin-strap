@@ -14,11 +14,11 @@ declare namespace Network {
 }
 
 
-export declare function Post(url: string, networkName?: string): (prototype, Name) => void;
-export declare function Get(url: string, networkName?: string): (prototype, Name) => void;
-export declare function Put(url: string, networkName?: string): (prototype, Name) => void;
-export declare function Delete(url: string, networkName?: string): (prototype, Name) => void;
-export declare function Head(url: string, networkName?: string): (prototype, Name) => void;
+export declare function Post(url: string, ...networkNames: string[]): (prototype, Name) => void;
+export declare function Get(url: string, ...networkNames: string[]): (prototype, Name) => void;
+export declare function Put(url: string, ...networkNames: string[]): (prototype, Name) => void;
+export declare function Delete(url: string, ...networkNames: string[]): (prototype, Name) => void;
+export declare function Head(url: string, ...networkNames: string[]): (prototype, Name) => void;
 export declare function Service(constructor: Function): void;
 
 declare class Network {

@@ -1,16 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
-const HtmlPlugin = require('html-webpack-plugin');
-const utils = require('./utils');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-// const xOption = process.cwd();
-const NODE_ENV = process.env.NODE_ENV;
-const BUILD_WAY = process.env.BUILD_WAY;
-// 编译前做的事
-// 获取 yml 配置信息
-// 获取所有页面
-// utils.gerRouterList();
 
 /****************************************************
  * config entry

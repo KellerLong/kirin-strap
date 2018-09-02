@@ -27,6 +27,7 @@
   "homepage": "https://github.com/KellerLong/kirin-strap#readme",
   "dependencies": {
     "@types/react": "^16.4.7",
+    "alphabetjs": "^0.1.4",
     "commander": "^2.16.0",
     "dva": "2.1.0",
     "express": "^4.16.3",

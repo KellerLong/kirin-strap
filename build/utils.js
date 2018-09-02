@@ -70,12 +70,14 @@ class Util {
 
     app.use('*', (req, res, next) => {
       const mock = eval(fs.readFileSync(__dirname + '/mock.js', 'utf-8')).default;
-      console.log(mock);
+
       mock.map( mockModel => {
         for ( let key in mockModel ) {
           if (/^__.*__$/.test(key) && mockModel[key].test(req.originalUrl) ) {
+            console.log('mock', req.originalUrl, mockModel[key]);
             let callName = key.replace(/^__(.*)__$/, (str, $1) => $1);
             const mockData = mockModel[callName]();
+
             res.send(Mock.mock(mockData));
           }
 

@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
 const utils = require('./utils');
-const ExtractTextPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // const xOption = process.cwd();
 const NODE_ENV = process.env.NODE_ENV;
@@ -123,7 +123,7 @@ moduleOptions.rules.push({
  * config plugins
  ***************************************************/
 const plugins = [];
-plugins.push(new ExtractTextPlugin({
+plugins.push(new MiniCssExtractPlugin({
     filename: `static/styles/style-[hash:5].css`,
     chunkFilename: '[id].css',
     allChunks: true,

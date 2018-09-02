@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
 const utils = require('./utils');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('mini-css-extract-plugin');
 
 // const xOption = process.cwd();
 const NODE_ENV = process.env.NODE_ENV;
@@ -56,11 +56,11 @@ const resolve = {
 /****************************************************
  * config module
  ***************************************************/
-const stylePrivate = new ExtractTextPlugin(
-  {
-    filename: `static/styles/style-[hash:5].css`,
-    allChunks: true,
-  });
+// const stylePrivate = new ExtractTextPlugin(
+//   {
+//     filename: `static/styles/style-[hash:5].css`,
+//     allChunks: true,
+//   });
 const moduleOptions = {
   rules: []
 };
@@ -84,23 +84,18 @@ moduleOptions.rules.push({
   loader: 'tslint-loader',
 });
 
-// css
-moduleOptions.rules.push({
-  test: /\.css$/,
-  loader: stylePrivate.extract({
-    fallback:"style-loader",
-    use: utils.getCssLoader(),
-    publicPath: '/'
-  })
-});
+
 // less
 moduleOptions.rules.push({
-  test: /\.less$/,
-  loader: stylePrivate.extract({
-    fallback:"style-loader",
-    use: utils.getLessLoader(),
-    publicPath: '/'
-  })
+  test: /\.(less|css)$/,
+  //loader: stylePrivate.extract({
+   // fallback:"style-loader",
+  use: [
+    MiniCssExtractPlugin.loader,
+    ...utils.getLessLoader()
+  ],
+  //  publicPath: '/'
+ // })
 });
 // image
 moduleOptions.rules.push({
@@ -127,7 +122,12 @@ moduleOptions.rules.push({
 /****************************************************
  * config plugins
  ***************************************************/
-const plugins = [stylePrivate];
+const plugins = [];
+plugins.push(new ExtractTextPlugin({
+    filename: `static/styles/style-[hash:5].css`,
+    chunkFilename: '[id].css',
+    allChunks: true,
+  }));
 plugins.push(new webpack.DefinePlugin(utils.getConfigDefinePlugin()));
 plugins.push(new HtmlPlugin(utils.getConfigHtmlTemplate()));
 

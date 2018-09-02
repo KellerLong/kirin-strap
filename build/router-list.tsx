@@ -1,6 +1,6 @@
 import React from 'react';
 import dva from 'dva';
-import { Router, Route, Switch, routerRedux, Redirect } from 'dva/router';
+import { Router, RouteView, Switch, routerRedux, Redirect } from 'kirin-strap/route';
 import dynamic from 'dva/dynamic';
 import routerConfig from './router-config.ts';
 import application from 'src/Application.ts';
@@ -20,7 +20,7 @@ const router = ({ history, app }) => (
     <Switch>
       { routerConfig.map(({ component, path, models }, key) => {
         return (
-          <Route
+          <RouteView
             key={key}
             exact={true}
             path={path}

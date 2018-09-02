@@ -100,13 +100,13 @@ class Util {
     const hotMiddleware         = WebpackHotMiddleware( compiler);
     const devMiddleware         = WebpackDevMiddleware( compiler, devConfig );
 
-    // add event
-    compiler.plugin("compilation", ( compilation ) => {
-      compilation.plugin( "html-webpack-plugin-after-emit", ( data, cb ) => {
-        hotMiddleware.publish({ action : "reload" });
-        // cb();
-      });
-    });
+    // add event rmove old
+    // compiler.plugin("compilation", ( compilation ) => {
+    //   compilation.plugin( "html-webpack-plugin-after-emit", ( data, cb ) => {
+    //     hotMiddleware.publish({ action : "reload" });
+    //     // cb();
+    //   });
+    // });
 
     // http use dev and hot loading
     app.use( devMiddleware );

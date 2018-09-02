@@ -395,61 +395,6 @@ eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn
 
 /***/ }),
 
-/***/ "./node_modules/babel-runtime/core-js/object/create.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/babel-runtime/core-js/object/create.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/object/create */ \"./node_modules/core-js/library/fn/object/create.js\"), __esModule: true };\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/core-js/object/create.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/core-js/object/define-property.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/babel-runtime/core-js/object/define-property.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/object/define-property */ \"./node_modules/core-js/library/fn/object/define-property.js\"), __esModule: true };\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/core-js/object/define-property.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/core-js/object/get-prototype-of.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/babel-runtime/core-js/object/get-prototype-of.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ \"./node_modules/core-js/library/fn/object/get-prototype-of.js\"), __esModule: true };\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/core-js/object/get-prototype-of.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/core-js/object/set-prototype-of.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/babel-runtime/core-js/object/set-prototype-of.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ \"./node_modules/core-js/library/fn/object/set-prototype-of.js\"), __esModule: true };\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/core-js/object/set-prototype-of.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/core-js/promise.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/babel-runtime/core-js/promise.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/promise */ \"./node_modules/core-js/library/fn/promise.js\"), __esModule: true };\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/core-js/promise.js?");
-
-/***/ }),
-
 /***/ "./node_modules/babel-runtime/core-js/symbol.js":
 /*!******************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/symbol.js ***!
@@ -472,30 +417,6 @@ eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn
 
 /***/ }),
 
-/***/ "./node_modules/babel-runtime/helpers/classCallCheck.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/babel-runtime/helpers/classCallCheck.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nexports.__esModule = true;\n\nexports.default = function (instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n};\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/helpers/classCallCheck.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/helpers/createClass.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/babel-runtime/helpers/createClass.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nexports.__esModule = true;\n\nvar _defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ \"./node_modules/babel-runtime/core-js/object/define-property.js\");\n\nvar _defineProperty2 = _interopRequireDefault(_defineProperty);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function () {\n  function defineProperties(target, props) {\n    for (var i = 0; i < props.length; i++) {\n      var descriptor = props[i];\n      descriptor.enumerable = descriptor.enumerable || false;\n      descriptor.configurable = true;\n      if (\"value\" in descriptor) descriptor.writable = true;\n      (0, _defineProperty2.default)(target, descriptor.key, descriptor);\n    }\n  }\n\n  return function (Constructor, protoProps, staticProps) {\n    if (protoProps) defineProperties(Constructor.prototype, protoProps);\n    if (staticProps) defineProperties(Constructor, staticProps);\n    return Constructor;\n  };\n}();\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/helpers/createClass.js?");
-
-/***/ }),
-
 /***/ "./node_modules/babel-runtime/helpers/extends.js":
 /*!*******************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/extends.js ***!
@@ -505,30 +426,6 @@ eval("\n\nexports.__esModule = true;\n\nvar _defineProperty = __webpack_require_
 
 "use strict";
 eval("\n\nexports.__esModule = true;\n\nvar _assign = __webpack_require__(/*! ../core-js/object/assign */ \"./node_modules/babel-runtime/core-js/object/assign.js\");\n\nvar _assign2 = _interopRequireDefault(_assign);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = _assign2.default || function (target) {\n  for (var i = 1; i < arguments.length; i++) {\n    var source = arguments[i];\n\n    for (var key in source) {\n      if (Object.prototype.hasOwnProperty.call(source, key)) {\n        target[key] = source[key];\n      }\n    }\n  }\n\n  return target;\n};\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/helpers/extends.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/helpers/inherits.js":
-/*!********************************************************!*\
-  !*** ./node_modules/babel-runtime/helpers/inherits.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nexports.__esModule = true;\n\nvar _setPrototypeOf = __webpack_require__(/*! ../core-js/object/set-prototype-of */ \"./node_modules/babel-runtime/core-js/object/set-prototype-of.js\");\n\nvar _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);\n\nvar _create = __webpack_require__(/*! ../core-js/object/create */ \"./node_modules/babel-runtime/core-js/object/create.js\");\n\nvar _create2 = _interopRequireDefault(_create);\n\nvar _typeof2 = __webpack_require__(/*! ../helpers/typeof */ \"./node_modules/babel-runtime/helpers/typeof.js\");\n\nvar _typeof3 = _interopRequireDefault(_typeof2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function (subClass, superClass) {\n  if (typeof superClass !== \"function\" && superClass !== null) {\n    throw new TypeError(\"Super expression must either be null or a function, not \" + (typeof superClass === \"undefined\" ? \"undefined\" : (0, _typeof3.default)(superClass)));\n  }\n\n  subClass.prototype = (0, _create2.default)(superClass && superClass.prototype, {\n    constructor: {\n      value: subClass,\n      enumerable: false,\n      writable: true,\n      configurable: true\n    }\n  });\n  if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;\n};\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/helpers/inherits.js?");
-
-/***/ }),
-
-/***/ "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/babel-runtime/helpers/possibleConstructorReturn.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nexports.__esModule = true;\n\nvar _typeof2 = __webpack_require__(/*! ../helpers/typeof */ \"./node_modules/babel-runtime/helpers/typeof.js\");\n\nvar _typeof3 = _interopRequireDefault(_typeof2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function (self, call) {\n  if (!self) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }\n\n  return call && ((typeof call === \"undefined\" ? \"undefined\" : (0, _typeof3.default)(call)) === \"object\" || typeof call === \"function\") ? call : self;\n};\n\n//# sourceURL=webpack:///./node_modules/babel-runtime/helpers/possibleConstructorReturn.js?");
 
 /***/ }),
 
@@ -600,17 +497,6 @@ eval("__webpack_require__(/*! ../../modules/es6.object.assign */ \"./node_module
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/object/create.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/create.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ../../modules/es6.object.create */ \"./node_modules/core-js/library/modules/es6.object.create.js\");\nvar $Object = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object;\nmodule.exports = function create(P, D) {\n  return $Object.create(P, D);\n};\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/create.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/define-property.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/define-property.js ***!
@@ -644,17 +530,6 @@ eval("__webpack_require__(/*! ../../modules/es6.symbol */ \"./node_modules/core-
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/object/get-prototype-of.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/get-prototype-of.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ \"./node_modules/core-js/library/modules/es6.object.get-prototype-of.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.getPrototypeOf;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/get-prototype-of.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/keys.js":
 /*!********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/keys.js ***!
@@ -663,17 +538,6 @@ eval("__webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ \"./n
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("__webpack_require__(/*! ../../modules/es6.object.keys */ \"./node_modules/core-js/library/modules/es6.object.keys.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.keys;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/keys.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/set-prototype-of.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/set-prototype-of.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ \"./node_modules/core-js/library/modules/es6.object.set-prototype-of.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.setPrototypeOf;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/set-prototype-of.js?");
 
 /***/ }),
 
@@ -1331,17 +1195,6 @@ eval("module.exports = __webpack_require__(/*! ./_hide */ \"./node_modules/core-
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/_set-proto.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_set-proto.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// Works with __proto__ only. Old v8 can't work with null proto objects.\n/* eslint-disable no-proto */\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/core-js/library/modules/_is-object.js\");\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/core-js/library/modules/_an-object.js\");\nvar check = function (O, proto) {\n  anObject(O);\n  if (!isObject(proto) && proto !== null) throw TypeError(proto + \": can't set as prototype!\");\n};\nmodule.exports = {\n  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line\n    function (test, buggy, set) {\n      try {\n        set = __webpack_require__(/*! ./_ctx */ \"./node_modules/core-js/library/modules/_ctx.js\")(Function.call, __webpack_require__(/*! ./_object-gopd */ \"./node_modules/core-js/library/modules/_object-gopd.js\").f(Object.prototype, '__proto__').set, 2);\n        set(test, []);\n        buggy = !(test instanceof Array);\n      } catch (e) { buggy = true; }\n      return function setPrototypeOf(O, proto) {\n        check(O, proto);\n        if (buggy) O.__proto__ = proto;\n        else set(O, proto);\n        return O;\n      };\n    }({}, false) : undefined),\n  check: check\n};\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/_set-proto.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/_set-species.js":
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-species.js ***!
@@ -1609,17 +1462,6 @@ eval("// 19.1.3.1 Object.assign(target, source)\nvar $export = __webpack_require
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.object.create.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.create.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\n// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])\n$export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create */ \"./node_modules/core-js/library/modules/_object-create.js\") });\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.create.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -1642,17 +1484,6 @@ eval("// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)\nvar toIObject = __webpa
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.get-prototype-of.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// 19.1.2.9 Object.getPrototypeOf(O)\nvar toObject = __webpack_require__(/*! ./_to-object */ \"./node_modules/core-js/library/modules/_to-object.js\");\nvar $getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ \"./node_modules/core-js/library/modules/_object-gpo.js\");\n\n__webpack_require__(/*! ./_object-sap */ \"./node_modules/core-js/library/modules/_object-sap.js\")('getPrototypeOf', function () {\n  return function getPrototypeOf(it) {\n    return $getPrototypeOf(toObject(it));\n  };\n});\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.get-prototype-of.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
@@ -1661,17 +1492,6 @@ eval("// 19.1.2.9 Object.getPrototypeOf(O)\nvar toObject = __webpack_require__(/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// 19.1.2.14 Object.keys(O)\nvar toObject = __webpack_require__(/*! ./_to-object */ \"./node_modules/core-js/library/modules/_to-object.js\");\nvar $keys = __webpack_require__(/*! ./_object-keys */ \"./node_modules/core-js/library/modules/_object-keys.js\");\n\n__webpack_require__(/*! ./_object-sap */ \"./node_modules/core-js/library/modules/_object-sap.js\")('keys', function () {\n  return function keys(it) {\n    return $keys(toObject(it));\n  };\n});\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.keys.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.set-prototype-of.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// 19.1.3.19 Object.setPrototypeOf(O, proto)\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\n$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-proto */ \"./node_modules/core-js/library/modules/_set-proto.js\").set });\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.set-prototype-of.js?");
 
 /***/ }),
 
@@ -1958,17 +1778,6 @@ eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/he
 
 /***/ }),
 
-/***/ "./node_modules/dva/dynamic.js":
-/*!*************************************!*\
-  !*** ./node_modules/dva/dynamic.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = __webpack_require__(/*! ./lib/dynamic */ \"./node_modules/dva/lib/dynamic.js\");\n\n\n//# sourceURL=webpack:///./node_modules/dva/dynamic.js?");
-
-/***/ }),
-
 /***/ "./node_modules/dva/index.js":
 /*!***********************************!*\
   !*** ./node_modules/dva/index.js ***!
@@ -1977,18 +1786,6 @@ eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nex
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = __webpack_require__(/*! ./lib */ \"./node_modules/dva/lib/index.js\");\nexports.connect = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\").connect;\n\n\n//# sourceURL=webpack:///./node_modules/dva/index.js?");
-
-/***/ }),
-
-/***/ "./node_modules/dva/lib/dynamic.js":
-/*!*****************************************!*\
-  !*** ./node_modules/dva/lib/dynamic.js ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _toConsumableArray2 = __webpack_require__(/*! babel-runtime/helpers/toConsumableArray */ \"./node_modules/babel-runtime/helpers/toConsumableArray.js\");\n\nvar _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);\n\nvar _promise = __webpack_require__(/*! babel-runtime/core-js/promise */ \"./node_modules/babel-runtime/core-js/promise.js\");\n\nvar _promise2 = _interopRequireDefault(_promise);\n\nvar _extends2 = __webpack_require__(/*! babel-runtime/helpers/extends */ \"./node_modules/babel-runtime/helpers/extends.js\");\n\nvar _extends3 = _interopRequireDefault(_extends2);\n\nvar _getPrototypeOf = __webpack_require__(/*! babel-runtime/core-js/object/get-prototype-of */ \"./node_modules/babel-runtime/core-js/object/get-prototype-of.js\");\n\nvar _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);\n\nvar _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ \"./node_modules/babel-runtime/helpers/classCallCheck.js\");\n\nvar _classCallCheck3 = _interopRequireDefault(_classCallCheck2);\n\nvar _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ \"./node_modules/babel-runtime/helpers/createClass.js\");\n\nvar _createClass3 = _interopRequireDefault(_createClass2);\n\nvar _possibleConstructorReturn2 = __webpack_require__(/*! babel-runtime/helpers/possibleConstructorReturn */ \"./node_modules/babel-runtime/helpers/possibleConstructorReturn.js\");\n\nvar _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);\n\nvar _inherits2 = __webpack_require__(/*! babel-runtime/helpers/inherits */ \"./node_modules/babel-runtime/helpers/inherits.js\");\n\nvar _inherits3 = _interopRequireDefault(_inherits2);\n\nexports.default = dynamic;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar cached = {};\nfunction registerModel(app, model) {\n  model = model.default || model;\n  if (!cached[model.namespace]) {\n    app.model(model);\n    cached[model.namespace] = 1;\n  }\n}\n\nvar defaultLoadingComponent = function defaultLoadingComponent() {\n  return null;\n};\n\nfunction asyncComponent(config) {\n  var resolve = config.resolve;\n\n\n  return function (_Component) {\n    (0, _inherits3.default)(DynamicComponent, _Component);\n\n    function DynamicComponent() {\n      var _ref;\n\n      (0, _classCallCheck3.default)(this, DynamicComponent);\n\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      var _this = (0, _possibleConstructorReturn3.default)(this, (_ref = DynamicComponent.__proto__ || (0, _getPrototypeOf2.default)(DynamicComponent)).call.apply(_ref, [this].concat(args)));\n\n      _this.LoadingComponent = config.LoadingComponent || defaultLoadingComponent;\n      _this.state = {\n        AsyncComponent: null\n      };\n      _this.load();\n      return _this;\n    }\n\n    (0, _createClass3.default)(DynamicComponent, [{\n      key: 'componentDidMount',\n      value: function componentDidMount() {\n        this.mounted = true;\n      }\n    }, {\n      key: 'load',\n      value: function load() {\n        var _this2 = this;\n\n        resolve().then(function (m) {\n          var AsyncComponent = m.default || m;\n          if (_this2.mounted) {\n            _this2.setState({ AsyncComponent: AsyncComponent });\n          } else {\n            _this2.state.AsyncComponent = AsyncComponent; // eslint-disable-line\n          }\n        });\n      }\n    }, {\n      key: 'render',\n      value: function render() {\n        var AsyncComponent = this.state.AsyncComponent;\n        var LoadingComponent = this.LoadingComponent;\n\n        if (AsyncComponent) return _react2.default.createElement(AsyncComponent, this.props);\n\n        return _react2.default.createElement(LoadingComponent, this.props);\n      }\n    }]);\n    return DynamicComponent;\n  }(_react.Component);\n}\n\nfunction dynamic(config) {\n  var app = config.app,\n      resolveModels = config.models,\n      resolveComponent = config.component;\n\n  return asyncComponent((0, _extends3.default)({\n    resolve: config.resolve || function () {\n      var models = typeof resolveModels === 'function' ? resolveModels() : [];\n      var component = resolveComponent();\n      return new _promise2.default(function (resolve) {\n        _promise2.default.all([].concat((0, _toConsumableArray3.default)(models), [component])).then(function (ret) {\n          if (!models || !models.length) {\n            return resolve(ret[0]);\n          } else {\n            var len = models.length;\n            ret.slice(0, len).forEach(function (m) {\n              registerModel(app, m);\n            });\n            resolve(ret[len]);\n          }\n        });\n      });\n    }\n  }, config));\n}\n\ndynamic.setDefaultLoadingComponent = function (LoadingComponent) {\n  defaultLoadingComponent = LoadingComponent;\n};\nmodule.exports = exports['default'];\n\n//# sourceURL=webpack:///./node_modules/dva/lib/dynamic.js?");
 
 /***/ }),
 
@@ -3601,98 +3398,38 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 
 /***/ }),
 
-/***/ "./src/component/Component.ts":
-/*!************************************!*\
-  !*** ./src/component/Component.ts ***!
-  \************************************/
+/***/ "./src/route/Route.ts":
+/*!****************************!*\
+  !*** ./src/route/Route.ts ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) {\n    return Component;\n});\n\n\n//# sourceURL=webpack:///./src/component/Component.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dva */ \"./node_modules/dva/index.js\");\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dva__WEBPACK_IMPORTED_MODULE_0__);\nvar __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {\n    return new (P || (P = Promise))(function (resolve, reject) {\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\n        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\n    });\n};\nvar __generator = (undefined && undefined.__generator) || function (thisArg, body) {\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\n    function verb(n) { return function (v) { return step([n, v]); }; }\n    function step(op) {\n        if (f) throw new TypeError(\"Generator is already executing.\");\n        while (_) try {\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\n            if (y = 0, t) op = [op[0] & 2, t.value];\n            switch (op[0]) {\n                case 0: case 1: t = op; break;\n                case 4: _.label++; return { value: op[1], done: false };\n                case 5: _.label++; y = op[1]; op = [0]; continue;\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\n                default:\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\n                    if (t[2]) _.ops.pop();\n                    _.trys.pop(); continue;\n            }\n            op = body.call(thisArg, _);\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\n    }\n};\n\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) { return function (Component) {\n    if (Component.__modeled__) {\n        return Component;\n    }\n    // 注入模块\n    var senior = Object(dva__WEBPACK_IMPORTED_MODULE_0__[\"connect\"])(function (model) { return model; })(Component);\n    var render = senior.prototype.render;\n    senior.prototype.render = function () {\n        var _this = this;\n        // 注入对象\n        var models = Component.prototype.__models__;\n        var _loop_1 = function (key) {\n            var model = this_1.selector.props[models[key]];\n            // 注入方法\n            var funList = model.__prototypeList__.split(',');\n            funList.map(function (funName) {\n                model[funName] = function (payload) { return __awaiter(_this, void 0, void 0, function () {\n                    return __generator(this, function (_a) {\n                        switch (_a.label) {\n                            case 0: return [4 /*yield*/, this.selector.props.dispatch({ payload: payload, type: models[key] + \"/\" + funName })];\n                            case 1: return [2 /*return*/, _a.sent()];\n                        }\n                    });\n                }); };\n            });\n            // 注入对象和属性\n            Component.prototype[key] = model;\n        };\n        var this_1 = this;\n        for (var key in models) {\n            _loop_1(key);\n        }\n        return render.call(this);\n    };\n    senior.__modeled__ = true;\n    return senior;\n}; });\n\n\n//# sourceURL=webpack:///./src/route/Route.ts?");
 
 /***/ }),
 
-/***/ "./src/component/ComponentLess.ts":
-/*!****************************************!*\
-  !*** ./src/component/ComponentLess.ts ***!
-  \****************************************/
-/*! exports provided: default */
+/***/ "./src/route/index.ts":
+/*!****************************!*\
+  !*** ./src/route/index.ts ***!
+  \****************************/
+/*! exports provided: Router, RouteView, Switch, routerRedux, Redirect, Route */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 无状态组件装饰器\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/ComponentLess.ts?");
-
-/***/ }),
-
-/***/ "./src/component/Model.ts":
-/*!********************************!*\
-  !*** ./src/component/Model.ts ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (ModelPath) { return function (Component, Name) {\n    // Component[Name] = Component.props[Name];\n    var modelNamespace = '';\n    ModelPath.replace(/\\/(.*)$/, function (str, $1) { return modelNamespace = $1; });\n    modelNamespace = modelNamespace || ModelPath;\n    Component.__models__ = Component.__models || {};\n    Component.__models__[Name] = modelNamespace;\n    Component[Name] = { props: function () { return Component.props; } };\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Model.ts?");
-
-/***/ }),
-
-/***/ "./src/component/Route.ts":
-/*!********************************!*\
-  !*** ./src/component/Route.ts ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dva */ \"./node_modules/dva/index.js\");\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dva__WEBPACK_IMPORTED_MODULE_0__);\nvar __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {\n    return new (P || (P = Promise))(function (resolve, reject) {\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\n        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\n    });\n};\nvar __generator = (undefined && undefined.__generator) || function (thisArg, body) {\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\n    function verb(n) { return function (v) { return step([n, v]); }; }\n    function step(op) {\n        if (f) throw new TypeError(\"Generator is already executing.\");\n        while (_) try {\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\n            if (y = 0, t) op = [op[0] & 2, t.value];\n            switch (op[0]) {\n                case 0: case 1: t = op; break;\n                case 4: _.label++; return { value: op[1], done: false };\n                case 5: _.label++; y = op[1]; op = [0]; continue;\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\n                default:\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\n                    if (t[2]) _.ops.pop();\n                    _.trys.pop(); continue;\n            }\n            op = body.call(thisArg, _);\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\n    }\n};\n\n// 路由\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) { return function (Component) {\n    if (Component.__modeled__) {\n        return Component;\n    }\n    // 注入模块\n    var senior = Object(dva__WEBPACK_IMPORTED_MODULE_0__[\"connect\"])(function (model) { return model; })(Component);\n    var render = senior.prototype.render;\n    senior.prototype.render = function () {\n        var _this = this;\n        // 注入对象\n        var models = Component.prototype.__models__;\n        var _loop_1 = function (key) {\n            var model = this_1.selector.props[models[key]];\n            // 注入方法\n            var funList = model.__prototypeList__.split(',');\n            funList.map(function (funName) {\n                model[funName] = function (payload) { return __awaiter(_this, void 0, void 0, function () {\n                    return __generator(this, function (_a) {\n                        switch (_a.label) {\n                            case 0: return [4 /*yield*/, this.selector.props.dispatch({ payload: payload, type: models[key] + \"/\" + funName })];\n                            case 1: return [2 /*return*/, _a.sent()];\n                        }\n                    });\n                }); };\n            });\n            // 注入对象和属性\n            Component.prototype[key] = model;\n        };\n        var this_1 = this;\n        for (var key in models) {\n            _loop_1(key);\n        }\n        return render.call(this);\n    };\n    senior.__modeled__ = true;\n    return senior;\n}; });\n\n\n//# sourceURL=webpack:///./src/component/Route.ts?");
-
-/***/ }),
-
-/***/ "./src/component/SSR.ts":
-/*!******************************!*\
-  !*** ./src/component/SSR.ts ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// 缓存组件\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/SSR.ts?");
-
-/***/ }),
-
-/***/ "./src/component/State.ts":
-/*!********************************!*\
-  !*** ./src/component/State.ts ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) { return Component; });\n\n\n//# sourceURL=webpack:///./src/component/State.ts?");
-
-/***/ }),
-
-/***/ "./src/component/index.ts":
-/*!********************************!*\
-  !*** ./src/component/index.ts ***!
-  \********************************/
-/*! exports provided: SSR, ComponentLess, Route, Component, Model, State, Dva, Router, Dynamic, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SSR\", function() { return SSR; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ComponentLess\", function() { return ComponentLess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Route\", function() { return Route; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Component\", function() { return Component; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Model\", function() { return Model; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"State\", function() { return State; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Dva\", function() { return Dva; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Router\", function() { return Router; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Dynamic\", function() { return Dynamic; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _SSR__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SSR */ \"./src/component/SSR.ts\");\n/* harmony import */ var _ComponentLess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLess */ \"./src/component/ComponentLess.ts\");\n/* harmony import */ var _Component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Component */ \"./src/component/Component.ts\");\n/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Route */ \"./src/component/Route.ts\");\n/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Model */ \"./src/component/Model.ts\");\n/* harmony import */ var _State__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./State */ \"./src/component/State.ts\");\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! dva */ \"./node_modules/dva/index.js\");\n/* harmony import */ var dva__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(dva__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var dva_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! dva/router */ \"./node_modules/dva/router.js\");\n/* harmony import */ var dva_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(dva_router__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var dva_dynamic__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! dva/dynamic */ \"./node_modules/dva/dynamic.js\");\n/* harmony import */ var dva_dynamic__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(dva_dynamic__WEBPACK_IMPORTED_MODULE_9__);\n\n\n\n\n\n\n\n// component 部分入口\n\n\n\n// 组件\nvar SSR = _SSR__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nvar ComponentLess = _ComponentLess__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nvar Route = _Route__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nvar Component = _Component__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nvar Model = _Model__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nvar State = _State__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\nvar Dva = dva__WEBPACK_IMPORTED_MODULE_7___default.a;\nvar Router = dva_router__WEBPACK_IMPORTED_MODULE_8___default.a;\nvar Dynamic = dva_dynamic__WEBPACK_IMPORTED_MODULE_9___default.a;\n/* harmony default export */ __webpack_exports__[\"default\"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n\n//# sourceURL=webpack:///./src/component/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Route\", function() { return Route; });\n/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Route */ \"./src/route/Route.ts\");\n/* harmony import */ var dva_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! dva/router */ \"./node_modules/dva/router.js\");\n/* harmony import */ var dva_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(dva_router__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Router\", function() { return dva_router__WEBPACK_IMPORTED_MODULE_1__[\"Router\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"RouteView\", function() { return dva_router__WEBPACK_IMPORTED_MODULE_1__[\"Route\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Switch\", function() { return dva_router__WEBPACK_IMPORTED_MODULE_1__[\"Switch\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"routerRedux\", function() { return dva_router__WEBPACK_IMPORTED_MODULE_1__[\"routerRedux\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Redirect\", function() { return dva_router__WEBPACK_IMPORTED_MODULE_1__[\"Redirect\"]; });\n\n\n\nvar Route = _Route__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/route/index.ts?");
 
 /***/ }),
 
 /***/ 0:
-/*!**************************************!*\
-  !*** multi ./src/component/index.ts ***!
-  \**************************************/
+/*!**********************************!*\
+  !*** multi ./src/route/index.ts ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ./src/component/index.ts */\"./src/component/index.ts\");\n\n\n//# sourceURL=webpack:///multi_./src/component/index.ts?");
+eval("module.exports = __webpack_require__(/*! ./src/route/index.ts */\"./src/route/index.ts\");\n\n\n//# sourceURL=webpack:///multi_./src/route/index.ts?");
 
 /***/ }),
 

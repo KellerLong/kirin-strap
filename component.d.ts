@@ -8,3 +8,5 @@ export declare function Component(constructor: Function): void;
 
 export declare function ComponentLess(constructor: Function): void;
 export declare function Model(modelPath: string): (a, b) => void;
+
+export declare function State(defaultData: any) : void;

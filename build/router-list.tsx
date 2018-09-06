@@ -1,7 +1,5 @@
 import React from 'react';
-import dva from 'dva';
-import { Router, RouteView, Switch, routerRedux, Redirect } from 'kirin-strap/route';
-import dynamic from 'dva/dynamic';
+import * as Router from 'kirin-strap/route';
 import routerConfig from './router-config.ts';
 import application from 'src/Application.ts';
 import Network from 'kirin-strap/network';
@@ -13,37 +11,24 @@ import Network from 'kirin-strap/network';
 (Network.prototype as any).onNetworkAppError = (application as any).onNetworkError;
 
 
-const { ConnectedRouter } = routerRedux;
+const { ConnectedRouter } = Router.routerRedux;
 
 const router = ({ history, app }) => (
   <ConnectedRouter history={history}>
-    <Switch>
+    <Router.Switch>
       { routerConfig.map(({ component, path, models }, key) => {
         return (
-          <RouteView
+          <Router.RouteView
             key={key}
             exact={true}
             path={path}
-            component={dynamic({ app, component, models: () => models })}
+            component={Router.dynamic({ app, component, models: () => models })}
           />
         );
       }) }
 
-    </Switch>
+    </Router.Switch>
   </ConnectedRouter>
 );
 
-// 1. Initialize
-const app = dva();
-
-// 2. Plugins
-// app.use({});
-
-// 3. Model
-// app.model(global);
-
-// 4. Router
-app.router(router);
-
-// 5. Start
-app.start('#root');
+application.__start__(router);

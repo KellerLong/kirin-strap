@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Router from 'kirin-strap/route';
+import Router from 'kirin-strap/route';
 import routerConfig from './router-config.ts';
 import application from 'src/Application.ts';
 import Network from 'kirin-strap/network';
@@ -14,21 +14,21 @@ import Network from 'kirin-strap/network';
 const { ConnectedRouter } = Router.routerRedux;
 
 const router = ({ history, app }) => (
-  <ConnectedRouter history={history}>
-    <Router.Switch>
-      { routerConfig.map(({ component, path, models }, key) => {
-        return (
-          <Router.RouteView
-            key={key}
-            exact={true}
-            path={path}
-            component={Router.dynamic({ app, component, models: () => models })}
-          />
-        );
-      }) }
+    <ConnectedRouter history={history}>
+        <Router.Switch>
+            { routerConfig.map(({ component, path, models }, key) => {
+                return (
+                    <Router.RouteView
+                        key={key}
+                        exact={true}
+                        path={path}
+                        component={Router.dynamic({ app, component, models: () => models })}
+                    />
+                );
+            }) }
 
-    </Router.Switch>
-  </ConnectedRouter>
+        </Router.Switch>
+    </ConnectedRouter>
 );
 
-application.__start__(router);
+(application as any).__start__(router);

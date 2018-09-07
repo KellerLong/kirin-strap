@@ -28,5 +28,11 @@ export declare const routerRedux: {
     goForward: typeof goForward,
 };
 
+export namespace Route {
+    export const routerRedux: any;
+    export const Switch: any;
+    export const RouteView: any;
+    export const dynamic: any;
+}
 export declare function Route(path: string, name?: string, parent?: string): (constructor: Function) => void;
 export default Route;

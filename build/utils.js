@@ -248,13 +248,21 @@ class Util {
       // 读取文件
       const code = fs.readFileSync(filePath, {encoding: 'utf-8'});
 
-      code.replace(/\@Route\((.*)\)/ig, (str, path) => {
+      code.replace(/\@Route\((.*)\)/ig, (str, arg) => {
+        const argList = [];
+        arg.replace(/(\'(.?)\')/ig, (str, $1) => {
+          argList.push($1);
+          return '';
+        });
+
         const models = [];
         code.replace(/\@Model\([\'|\"](.*)[\'|\"]\)/ig, (str, modelName) => {
           models.push(`import('models/${modelName}.ts')`)
         })
-        routerConfig.push(` {
-    path: ${path},
+        argList[0] && routerConfig.push(` {
+    path: ${argList[0]},
+    name: ${argList[1] || '\'\''},
+    parent: ${argList[2] || '\'\''},
     component: () => import('${pagePath}'),
     models: [${models.join(',')}],
   }`);
